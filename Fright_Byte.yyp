@@ -35,6 +35,7 @@
   "name":"Fright_Byte",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_monster_body1_walk","path":"sprites/spr_monster_body1_walk/spr_monster_body1_walk.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
