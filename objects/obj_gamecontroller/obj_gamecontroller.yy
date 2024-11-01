@@ -6,8 +6,8 @@
   "name":"obj_gamecontroller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"meta",
+    "path":"folders/Objects/meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,

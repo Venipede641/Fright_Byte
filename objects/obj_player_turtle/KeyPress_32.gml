@@ -7,4 +7,5 @@ if(on_ground)
 	is_jumping = true
 	in_air = true
 	is_falling =true
+
 }

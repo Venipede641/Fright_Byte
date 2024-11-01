@@ -1,6 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-y_velocity += 1.5 //velocity gets modified
+
+if(is_falling) //if falling, increase the desent speed for a tighter jump
+{
+y_velocity += obj_gamecontroller.game_gravity //velocity gets modified
+}
+y_velocity += obj_gamecontroller.game_gravity //applies once if rising, twice if falling
 var predicted_y = y + y_velocity //predicts the movement
 
 if(!place_meeting(x,predicted_y,obj_box))
@@ -29,6 +32,8 @@ else //we are going to hit a platform
 	in_air = false
 	is_falling = false
 	y_velocity = 0
+
+
 }
 
 

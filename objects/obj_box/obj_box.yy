@@ -6,8 +6,8 @@
   "name":"obj_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"level_geometry",
+    "path":"folders/Objects/level_geometry.yy",
   },
   "parentObjectId":null,
   "persistent":false,
