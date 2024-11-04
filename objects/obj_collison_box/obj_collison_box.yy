@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_statehandler",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_collison_box",
+  "eventList":[],
   "managed":true,
-  "name":"obj_statehandler",
+  "name":"obj_collison_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"meta",
-    "path":"folders/Objects/meta.yy",
+    "name":"level_geometry",
+    "path":"folders/Objects/level_geometry.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collision_box",
+    "path":"sprites/spr_collision_box/spr_collision_box.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
