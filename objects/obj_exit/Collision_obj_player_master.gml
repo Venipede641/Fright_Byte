@@ -2,3 +2,4 @@
 room_goto(targetRoomId)
 other.x = targetXPosition
 other.y = targetYPosition
+
