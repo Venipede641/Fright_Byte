@@ -3,5 +3,5 @@
 if(can_pick_up&& !is_holding_item)
 {
 is_holding_item = true
-instance_nearest(x,y,obj_item_test).being_held = true // sets the flag for the object to move with the player, see obj
+instance_nearest(x,y,obj_item_master).being_held = true // sets the flag for the object to move with the player, see obj_item_master step for details
 }

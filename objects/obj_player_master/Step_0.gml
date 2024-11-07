@@ -24,9 +24,9 @@ y += y_velocity//apply the velocity, no collisons will occur
 }
 else //we are going to hit a colliable
 {
-	switch(ycollison.terrian_type)
+	switch(ycollison.terrian_type) //reads the terrain type and acts acordingly
 	{
-		case 1: //solid ground from all directions
+		case 1: //solid ground from all directions, noraml collison code
 		predicted_y = y
 		while(!place_meeting(x,predicted_y,ycollison))
 		{
@@ -61,7 +61,7 @@ else //we are going to hit a colliable
 		}
 		break;
 		
-		case 3: //same as solid ground for player, thus the same
+		case 3: //keydoor, same as solid ground for player, thus the same code for it
 		predicted_y = y
 		while(!place_meeting(x,predicted_y,ycollison))
 		{
