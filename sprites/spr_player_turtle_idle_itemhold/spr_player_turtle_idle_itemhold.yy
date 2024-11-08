@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_player_turtle_idle_itemhold",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":79,
-  "bbox_left":10,
-  "bbox_right":69,
+  "bbox_left":0,
+  "bbox_right":79,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -38,7 +38,7 @@
   ],
   "name":"spr_player_turtle_idle_itemhold",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"turtle",
     "path":"folders/Sprites/player/turtle.yy",

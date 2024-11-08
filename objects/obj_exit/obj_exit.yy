@@ -3,16 +3,18 @@
   "%Name":"obj_exit",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player_master","path":"objects/obj_player_master/obj_player_master.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"room exit",
-    "path":"folders/Objects/level_geometry/collidables/room exit.yy",
+    "name":"type4: exit",
+    "path":"folders/Objects/level_geometry/collidables/type4: exit.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collidable_master",
+    "path":"objects/obj_collidable_master/obj_collidable_master.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

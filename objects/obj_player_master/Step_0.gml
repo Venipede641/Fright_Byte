@@ -1,5 +1,4 @@
 /// @description runs game movement and animations
-
 if(y_velocity > 0) //check if we're falling
 {
 	alarm[1] = game_get_speed(gamespeed_fps) *.25 // coyote time, allows player to jump a little after they fell of the platform
@@ -16,101 +15,105 @@ y_velocity += obj_gamecontroller.game_gravity //velocity gets modified
 }
 y_velocity += obj_gamecontroller.game_gravity //applies once if rising, twice if falling
 
-var predicted_y = y + y_velocity //predicts the movement
-var ycollison = instance_place(x,predicted_y,obj_collidable_master) //fetchs the object we are colliding with, if there is one
-if(ycollison == noone)//checks to see if we are hitting a colliable
-{
-y += y_velocity//apply the velocity, no collisons will occur
-}
-else //we are going to hit a colliable
-{
-	switch(ycollison.terrian_type) //reads the terrain type and acts acordingly
-	{
-		case 1: //solid ground from all directions, noraml collison code
-		predicted_y = y
-		while(!place_meeting(x,predicted_y,ycollison))
-		{
-			predicted_y += sign(y_velocity)
-		}
-		y = predicted_y- sign(y_velocity)
-		on_ground = true
-		is_jumping = false
-		in_air = false
-		is_falling = false
-		y_velocity = 0
-		break;
-		
-		case 2: //one way platforms, player can rise through them but land on top
-		if(y_velocity < 0 || platform_passthrough == true) //if we are not falling, ignore
-		{
-			y += y_velocity
-		}
-		else //else, collide as normal
-		{
-			predicted_y = y
-			while(!place_meeting(x,predicted_y,ycollison))
-			{
-				predicted_y += sign(y_velocity)
-			}
-			y = predicted_y- sign(y_velocity)
-			on_ground = true
-			is_jumping = false
-			in_air = false
-			is_falling = false
-			y_velocity = 0
-		}
-		break;
-		
-		case 3: //keydoor, same as solid ground for player, thus the same code for it
-		predicted_y = y
-		while(!place_meeting(x,predicted_y,ycollison))
-		{
-			predicted_y += sign(y_velocity)
-		}
-		y = predicted_y- sign(y_velocity)
-		on_ground = true
-		is_jumping = false
-		in_air = false
-		is_falling = false
-		y_velocity = 0
-		break;
-	}
-}
-
 var predicted_x = x + x_velocity
-var xcollison = instance_place(predicted_x,y,obj_collidable_master)
+var xcollison = instance_place(predicted_x,y,obj_collidable_master) //fetchs the object we are colliding with, if there is one
 if(xcollison == noone)
 {
 	x += x_velocity
 }
-else //we are going to hit a platform
+else
 {
 	switch(xcollison.terrian_type)
 	{
-		case 1: // colliding with solid ground
-		predicted_x = x
-		while(!place_meeting (predicted_x,y,xcollison))
-		{
-			predicted_x += sign(x_velocity) //"nudge" the object in place
-		}
-		x = predicted_x - sign(x_velocity) //apply "nudge" to put player in correct position
+		case 1: //solid ground from all directions
+		move_and_collide(x_velocity,0,obj_collidable_master)
+		x_velocity = 0
 		break;
 		
-		case 2: //colliding with platform
+		case 2: //one way platforms, player can rise through them but land on top and can move through them horizontaly
 		x += x_velocity
 		break;
 		
-		case 3: // keydoor, same as solid ground for player
-		predicted_x = x
-		while(!place_meeting (predicted_x,y,xcollison))
-		{
-			predicted_x += sign(x_velocity) //"nudge" the object in place
-		}
-		x = predicted_x - sign(x_velocity) //apply "nudge" to put player in correct position
+		case 3: //same as case 1, but different for key
+		move_and_collide(x_velocity,0,obj_collidable_master)
+		x_velocity = 0
 		break;
+		
+		case 4: //move the player to another room
+		room_goto(xcollison.targetRoomId)
+		x = xcollison.targetXPosition
+		y = xcollison.targetYPosition
+		break;
+		
+		default: //incase, treat it like regular ground
+		move_and_collide(x_velocity,0,obj_collidable_master)
+		x_velocity = 0
 	}
 }
-
+	
+	var predicted_y = y + y_velocity //predicts the movement
+	var ycollison = instance_place(x,predicted_y,obj_collidable_master) //fetchs the object we are colliding with, if there is one
+	if(ycollison == noone)
+	{
+		y += y_velocity
+	}
+	else
+	{
+	switch(ycollison.terrian_type)
+	{
+		case 1: //solid ground from all directions
+		move_and_collide(0,y_velocity,obj_collidable_master)
+		on_ground = true
+		is_falling = false
+		is_jumping = false
+		in_air = false
+		y_velocity = 0
+		break;
+		
+		case 2: //one way platforms, player can rise through them but land on top
+		if(bbox_bottom -1 <= ycollison.bbox_top && !platform_passthrough) //if we are above the platform, set our y to the platform y
+		{
+			y = ycollison.y -80
+			on_ground = true
+			is_falling = false
+			is_jumping = false
+			in_air = false
+			y_velocity = 0
+		}
+		else //else, pass through
+		{
+			y += y_velocity
+			on_ground = false
+			is_falling = true
+			is_jumping = true
+			in_air = true
+		}
+		break;
+		
+		case 3: //same as case 1, but different for key
+		move_and_collide(0,y_velocity,obj_collidable_master)
+			on_ground = true
+			is_falling = false
+			is_jumping = false
+			in_air = false
+			y_velocity = 0
+		break;
+		
+		case 4: //move the player to another room
+		room_goto(ycollison.targetRoomId)
+		x = ycollison.targetXPosition
+		y = ycollison.targetYPosition
+		break;
+		
+		default: //incase, treat it like regular ground
+		move_and_collide(0,y_velocity,obj_collidable_master)
+		on_ground = true
+		is_falling = false
+		is_jumping = false
+		in_air = false
+		y_velocity = 0
+	}
+	}
 //animation handling
 //shortcut for what each number means
 //0 = idle

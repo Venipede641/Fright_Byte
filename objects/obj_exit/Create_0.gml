@@ -3,3 +3,4 @@
 targetRoomId = -1
 targetXPosition = -1
 targetYPosition = -1
+terrian_type = 4

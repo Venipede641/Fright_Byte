@@ -14,6 +14,6 @@ if(on_ground)
 	on_ground =false
 	is_jumping = true
 	in_air = true
-	is_falling =true
+	is_falling =false
 	}
 }

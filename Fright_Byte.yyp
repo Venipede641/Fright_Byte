@@ -18,6 +18,7 @@
     {"$GMFolder":"","%Name":"items","folderPath":"folders/Objects/items.yy","name":"items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"level_geometry","folderPath":"folders/Objects/level_geometry.yy","name":"level_geometry","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"collidables","folderPath":"folders/Objects/level_geometry/collidables.yy","name":"collidables","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"type4: exit","folderPath":"folders/Objects/level_geometry/collidables/type4: exit.yy","name":"type4: exit","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"room exit","folderPath":"folders/Objects/level_geometry/collidables/room exit.yy","name":"room exit","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"type1: solids","folderPath":"folders/Objects/level_geometry/collidables/type1: solids.yy","name":"type1: solids","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"type2: 1-way platforms","folderPath":"folders/Objects/level_geometry/collidables/type2: 1-way platforms.yy","name":"type2: 1-way platforms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -47,7 +48,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"Fright_Byte",
   "resources":[
