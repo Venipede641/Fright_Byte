@@ -9,8 +9,8 @@
   "name":"obj_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"room exit",
-    "path":"folders/Objects/level_geometry/collidables/room exit.yy",
+    "name":"level_geometry",
+    "path":"folders/Objects/level_geometry.yy",
   },
   "parentObjectId":null,
   "persistent":false,
