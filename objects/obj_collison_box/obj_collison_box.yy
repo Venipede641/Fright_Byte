@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
   "%Name":"obj_collison_box",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_collison_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"level_geometry",
-    "path":"folders/Objects/level_geometry.yy",
+    "name":"type1: solids",
+    "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collidable_master",
+    "path":"objects/obj_collidable_master/obj_collidable_master.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
