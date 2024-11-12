@@ -6,8 +6,8 @@
   "name":"obj_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"type2: 1-way platforms",
-    "path":"folders/Objects/level_geometry/collidables/type2: 1-way platforms.yy",
+    "name":"Fright_Byte",
+    "path":"Fright_Byte.yyp",
   },
   "parentObjectId":{
     "name":"obj_collison_box",

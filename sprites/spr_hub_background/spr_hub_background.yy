@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"hub",
-    "path":"folders/Sprites/Environment/hub.yy",
+    "path":"folders/Sprites/items/hub.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -6,8 +6,8 @@
   "name":"obj_ground",
   "overriddenProperties":[],
   "parent":{
-    "name":"type1: solids",
-    "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
+    "name":"Fright_Byte",
+    "path":"Fright_Byte.yyp",
   },
   "parentObjectId":{
     "name":"obj_collison_box",

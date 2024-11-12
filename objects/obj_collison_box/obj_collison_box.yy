@@ -8,13 +8,10 @@
   "name":"obj_collison_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"type1: solids",
-    "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
+    "name":"Fright_Byte",
+    "path":"Fright_Byte.yyp",
   },
-  "parentObjectId":{
-    "name":"obj_collidable_master",
-    "path":"objects/obj_collidable_master/obj_collidable_master.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
