@@ -98,11 +98,12 @@ else
 		break;
 		
 		case 2: //one way platforms, player can rise through them but land on top
-		if(bbox_bottom -1 <= ycollison.bbox_top && !platform_passthrough) //if we are above the platform, set our y to the platform y
+		if(bbox_bottom -1 <= ycollison.bbox_top) //if we are above the platform, set our y to the platform y
 		{
 			y = ycollison.y -80
 			is_falling = false
 			y_velocity = 0
+			x_velocity = 0
 			being_thrown = false
 		}
 		else //else, pass through
