@@ -71,6 +71,7 @@
     {"id":{"name":"spr_player_turtle_jump_rising","path":"sprites/spr_player_turtle_jump_rising/spr_player_turtle_jump_rising.yy",},},
     {"id":{"name":"spr_player_turtle_walk_itemhold","path":"sprites/spr_player_turtle_walk_itemhold/spr_player_turtle_walk_itemhold.yy",},},
     {"id":{"name":"spr_player_turtle_walk","path":"sprites/spr_player_turtle_walk/spr_player_turtle_walk.yy",},},
+    {"id":{"name":"spr_titlecard","path":"sprites/spr_titlecard/spr_titlecard.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
