@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_player_turtle_walk",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":79,
   "bbox_left":0,
   "bbox_right":79,

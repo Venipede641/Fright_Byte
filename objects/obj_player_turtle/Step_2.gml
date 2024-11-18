@@ -35,10 +35,10 @@ switch(animation_state)
 	break;
 	
 	case 6: //jumping rising with item
-	sprite_index = spr_player_turtle_jump_rising
+	sprite_index = spr_player_turtle_jump_rising_itemhold
 	break;
 	
 	case 7: //jumping falling with item
-	sprite_index = spr_player_turtle_jump_falling
+	sprite_index = spr_player_turtle_jump_falling_itemhold
 	break;	
 }

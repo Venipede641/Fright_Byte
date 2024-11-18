@@ -6,8 +6,8 @@
   "name":"obj_ground",
   "overriddenProperties":[],
   "parent":{
-    "name":"level_geometry",
-    "path":"folders/Objects/level_geometry.yy",
+    "name":"type1: solids",
+    "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
   },
   "parentObjectId":{
     "name":"obj_collison_box",
