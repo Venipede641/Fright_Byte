@@ -8,8 +8,6 @@ if (keyboard_check_pressed(vk_left)) {
 // If the player selects a character go to the first room
 if (keyboard_check_pressed(vk_space)) {
     // Transition to Room1
-    room_goto(Room1); 
-
-    // Spawn the character object in designated room
-     scr_choose_character();
+	global.character_spawn_next_frame = true;  // Set the flag
+	room_goto(Room1);
 }
