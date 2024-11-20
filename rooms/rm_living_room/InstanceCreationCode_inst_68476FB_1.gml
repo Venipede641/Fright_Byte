@@ -1,3 +1,3 @@
-targetXPosition =800
+targetXPosition =400
 targetYPosition = 720
-targetRoomId = Room4
+targetRoomId = rm_upstairs_1

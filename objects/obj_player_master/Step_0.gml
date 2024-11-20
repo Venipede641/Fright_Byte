@@ -49,6 +49,16 @@ else
 		x = xcollison.targetXPosition
 		y = xcollison.targetYPosition
 		break;
+		case 5:
+		x += x_velocity;
+		// Check if the up arrow is pressed
+	    if (keyboard_check_pressed(vk_up)) {
+	        // Teleport the player when the key is pressed
+	        room_goto(xcollison.targetRoomId);
+	        x = xcollison.targetXPosition;
+	        y = xcollison.targetYPosition;
+	    }
+	    break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
@@ -109,6 +119,20 @@ else
 		x = ycollison.targetXPosition
 		y = ycollison.targetYPosition
 		break;
+		
+		case 5:
+		// Allow the player to move freely past the door
+	    if (!on_ground) {
+	        y += y_velocity; // Apply gravity only if the player is not grounded
+	    }
+		// Check if the up arrow is pressed
+	    if (keyboard_check_pressed(vk_up)) {
+	        // Teleport the player when the key is pressed
+	        room_goto(ycollison.targetRoomId);
+	        x = ycollison.targetXPosition;
+	        y = ycollison.targetYPosition;
+	    }
+	    break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)
