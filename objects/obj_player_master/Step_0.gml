@@ -1,3 +1,8 @@
+if (global.is_paused) {
+	//do nothing while the game is paused
+	exit;	
+}
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {
@@ -113,7 +118,7 @@ else
 		in_air = false
 		y_velocity = 0
 	}
-	}
+}
 //animation handling
 //shortcut for what each number means
 //0 = idle
@@ -125,6 +130,7 @@ else
 //6 = jumping-rising-itemhold
 //7 = jumping-falling-itemhold
 // each other player derivative will have to have a anamation handler seperatly to implement their own sprites, see player turtle for example
+image_speed = 1;
 if(x_velocity > 0)
 	{ //this code flips the player depending on what way the player is moving, this used for item throwing and saves work for getting 2 different animations moving left and right
 		image_xscale = 1 
