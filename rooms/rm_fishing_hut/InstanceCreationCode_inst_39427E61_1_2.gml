@@ -1,3 +1,3 @@
-targetXPosition =1560
+targetXPosition = 40
 targetYPosition = 680
 targetRoomId = rm_fish_start

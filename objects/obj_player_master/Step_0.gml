@@ -122,9 +122,19 @@ else
 		
 		case 5:
 		// Allow the player to move freely past the door
-	    if (!on_ground) {
+		if(bbox_bottom >= ycollison.bbox_bottom && is_falling == true)
+		{
+			y = ycollison.bbox_bottom -40
+			on_ground = true
+		is_falling = false
+		is_jumping = false
+		in_air = false
+		y_velocity = 0
+		}
+		else
+		{
 	        y += y_velocity; // Apply gravity only if the player is not grounded
-	    }
+		}
 		// Check if the up arrow is pressed
 	    if (keyboard_check_pressed(vk_up)) {
 	        // Teleport the player when the key is pressed
@@ -141,6 +151,7 @@ else
 		is_jumping = false
 		in_air = false
 		y_velocity = 0
+		break;
 	}
 }
 //animation handling

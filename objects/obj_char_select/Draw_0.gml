@@ -1,17 +1,17 @@
 // Screen dimensions
-var screen_width = display_get_width();
-var screen_height = display_get_height();
+var screen_width = room_width;
+var screen_height = room_height;
 
 // Draw the title text at the top center
 draw_set_color(c_black);
 var text = "Choose Your Character:";
 var text_width = string_width(text);
 // Draw the text with scaling
-draw_text_transformed((screen_width / 2) - (text_width * 3), 250, text, 4, 4, 0);
+draw_text_transformed((screen_width/1.5) - (text_width * 3), 250, text, 4, 4, 0);
 
 // Position the characters side-by-side
 var character_spacing = 200;
-var start_x = (screen_width / 2) - (array_length(global.characters) * character_spacing) / 2;
+var start_x = (screen_width / 1.75) - (array_length(global.characters) * character_spacing) / 2;
 var y_position = screen_height / 2;
 
 // Loop through characters and draw each with a selection box around the chosen one
