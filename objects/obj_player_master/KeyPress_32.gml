@@ -10,6 +10,9 @@ if(on_ground)
 	}
 	else
 	{
+	global.jumping = true;
+	global.janchorX = x;
+	global.janchorY = y;
 	y_velocity = jump_power
 	on_ground =false
 	is_jumping = true
