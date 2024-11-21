@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"DialogueTest",
+  "%Name":"tutorial_dialogue_pt1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":58,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"DialogueTest",
+  "name":"tutorial_dialogue_pt1",
   "overriddenProperties":[],
   "parent":{
-    "name":"meta",
-    "path":"folders/Objects/meta.yy",
+    "name":"tutorial dialogue",
+    "path":"folders/Objects/tutorial dialogue.yy",
   },
   "parentObjectId":{
     "name":"DialogueParent",
