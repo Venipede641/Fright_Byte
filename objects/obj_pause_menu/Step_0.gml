@@ -20,4 +20,7 @@ if (keyboard_check_pressed(vk_enter)) {
         game_end();
     }
 }
+if(!global.is_paused){
+	instance_destroy();
+}
 
