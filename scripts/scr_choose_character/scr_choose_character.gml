@@ -13,7 +13,11 @@ function scr_choose_character(){
 	} 
 	else if (global.selected_character == 2) {
 	    // Create the second character object in Room1 
-		instance_create_layer(spawn_x, spawn_y, "Instances", obj_player_cat);
+		instance_create_layer(spawn_x, spawn_y, "Instances", obj_player_slime);
+	}
+	else if (global.selected_character == 3) {
+	    // Create the second character object in Room1 
+		instance_create_layer(spawn_x, spawn_y, "Instances", obj_player_dragon);
 	}
 		// add more characters here
 }
