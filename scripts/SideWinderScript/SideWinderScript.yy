@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SideWinderScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SideWinderScript",
+  "parent":{
+    "name":"sidewinder",
+    "path":"folders/Objects/sidewinder.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

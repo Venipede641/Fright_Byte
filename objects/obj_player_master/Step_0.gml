@@ -197,3 +197,9 @@ else
 		animation_state = 0 // idle no item
 	}
 }
+
+//global value to keep track of jumps
+if(!in_air)
+{
+	global.jumping = false;
+}
