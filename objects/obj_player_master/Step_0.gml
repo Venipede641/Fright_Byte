@@ -222,3 +222,8 @@ else
 	}
 }
 
+//global value to keep track of jumps
+if(!in_air)
+{
+	global.jumping = false;
+}
