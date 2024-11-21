@@ -51,7 +51,7 @@ else
 		break;
 		case 5:
 		x += x_velocity;
-		// Check if the up arrow is pressed
+		// Check if the up arrow is pressed and the door is unlocked
 	    if (keyboard_check_pressed(vk_up)) {
 	        // Teleport the player when the key is pressed
 	        room_goto(xcollison.targetRoomId);
