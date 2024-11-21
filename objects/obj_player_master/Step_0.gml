@@ -221,3 +221,4 @@ else
 		animation_state = 0 // idle no item
 	}
 }
+
