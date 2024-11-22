@@ -1,1 +1,1 @@
-global.player=self
+global.player = self

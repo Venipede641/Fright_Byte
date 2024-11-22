@@ -1,4 +1,4 @@
 
-targetXPosition = 300
-targetYPosition = 500
+targetXPosition = 800
+targetYPosition = 300
 targetRoomId = rm_fish_start; 
