@@ -67,5 +67,5 @@ else
 	{
 		draw_sprite(current_dialogue.sprite,0,border*3,border*3);
 	}
-	
+	draw_set_color(c_white);
 }
