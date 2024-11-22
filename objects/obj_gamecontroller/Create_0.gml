@@ -3,3 +3,4 @@ if (global.character_spawning) {
     global.character_spawning = false;  // Reset the flag to avoid it running every frame
 }
 
+global.game_breaker = false;

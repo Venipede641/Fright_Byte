@@ -9,8 +9,8 @@
   "name":"obj_game_breaker",
   "overriddenProperties":[],
   "parent":{
-    "name":"meta",
-    "path":"folders/Objects/meta.yy",
+    "name":"game_breaker",
+    "path":"folders/Objects/game_breaker.yy",
   },
   "parentObjectId":null,
   "persistent":false,
