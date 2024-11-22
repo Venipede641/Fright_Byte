@@ -1,3 +1,3 @@
 targetXPosition = 240;
 targetYPosition = 680;
-targetRoomId = rm_bedroom_4;
+targetRoomId = rm_bedroom_fish;
