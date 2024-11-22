@@ -1,2 +1,1 @@
-global.jumping = false;
-global.player = self;
+global.player=self
