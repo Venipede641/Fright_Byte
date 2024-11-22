@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_breaker",
+  "%Name":"obj_Game_Over",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_game_breaker",
+  "name":"obj_Game_Over",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_breaker",
-    "path":"folders/Objects/game_breaker.yy",
+    "name":"meta",
+    "path":"folders/Objects/meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Game_Over",
+    "path":"sprites/spr_Game_Over/spr_Game_Over.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

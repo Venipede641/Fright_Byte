@@ -1,7 +1,7 @@
 // Array to store placed positions
 var placed_positions = [];
 
- if (global.break_game) {	
+ if (room_has_spawned) {	
 	for (var i = 0; i < 10; i++) { // Randomly create 3 instances  
         var random_obj = irandom(2); // Random index n for the n-sized array
         var random_x, random_y, valid_position;
@@ -55,5 +55,8 @@ var placed_positions = [];
             array_push(placed_positions, [random_x, random_y]);
         }
     }
+	room_has_spawned = false;
 }
-global.break_game = false;
+
+
+
