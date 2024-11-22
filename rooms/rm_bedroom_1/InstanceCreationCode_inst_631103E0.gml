@@ -1,3 +1,3 @@
-targetXPosition = 300
-targetYPosition = 500
-targetRoomId = rm_fish_start
+targetXPosition = 350
+targetYPosition = 450
+targetRoomId = rm_forest_start
