@@ -4,7 +4,7 @@ depth = 10; // ensures the door goes behind the player
 targetRoomId = -1;
 targetXPosition = -1;
 targetYPosition = -1;
-terrian_type = 5;
+terrian_type = 6;
 
 // Text properties
 show_text = false;    // Only show text when the player is nearby

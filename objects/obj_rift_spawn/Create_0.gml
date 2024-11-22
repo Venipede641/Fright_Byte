@@ -1,1 +1,0 @@
-global.game_breaker= false;

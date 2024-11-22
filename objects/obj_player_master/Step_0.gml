@@ -49,6 +49,7 @@ else
 		x = xcollison.targetXPosition
 		y = xcollison.targetYPosition
 		break;
+		
 		case 5:
 		x += x_velocity;
 		// Check if the up arrow is pressed and the door is unlocked
@@ -59,6 +60,17 @@ else
 	        y = xcollison.targetYPosition;
 	    }
 	    break;
+		
+		case 6: // portals
+		x += x_velocity;
+		// Check if the up arrow is pressed and the door is unlocked
+	    if (keyboard_check_pressed(vk_up)) {
+	        // Teleport the player when the key is pressed
+	        room_goto(xcollison.targetRoomId);
+	        x = xcollison.targetXPosition;
+	        y = xcollison.targetYPosition;
+	    }
+		break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
@@ -126,10 +138,10 @@ else
 		{
 			y = ycollison.bbox_bottom -40
 			on_ground = true
-		is_falling = false
-		is_jumping = false
-		in_air = false
-		y_velocity = 0
+			is_falling = false
+			is_jumping = false
+			in_air = false
+			y_velocity = 0
 		}
 		else
 		{
@@ -143,6 +155,30 @@ else
 	        y = ycollison.targetYPosition;
 	    }
 	    break;
+		
+		case 6: // portals
+		// Allow the player to move freely past the portal
+		if(bbox_bottom >= ycollison.bbox_bottom && is_falling == true)
+		{
+			y = ycollison.bbox_bottom -40
+			on_ground = true
+			is_falling = false
+			is_jumping = false
+			in_air = false
+			y_velocity = 0
+		}
+		else
+		{
+	        y += y_velocity; // Apply gravity only if the player is not grounded
+		}
+		// Check if the up arrow is pressed and the door is unlocked
+	    if (keyboard_check_pressed(vk_up)) {
+	        // Teleport the player when the key is pressed
+	        room_goto(xcollison.targetRoomId);
+	        x = xcollison.targetXPosition;
+	        y = xcollison.targetYPosition;
+	    }
+		break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)

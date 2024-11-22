@@ -1,9 +1,9 @@
-depth = -10; // ensures the door goes behind the player
+depth = 10; // ensures the door goes behind the player
 //specific create instances in rooms overide these values
 targetRoomId = rm_fish_start;
 targetXPosition = 800;
 targetYPosition = 300;
-terrian_type = 5;
+terrian_type = 6;
 
 // Text properties
 show_text = false;    // Only show text when the player is nearby
