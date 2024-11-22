@@ -59,7 +59,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Fright_Byte",
   "resources":[
@@ -73,6 +73,7 @@
     {"id":{"name":"obj_damage_box","path":"objects/obj_damage_box/obj_damage_box.yy",},},
     {"id":{"name":"obj_datatransfer","path":"objects/obj_datatransfer/obj_datatransfer.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
+    {"id":{"name":"obj_Empty","path":"objects/obj_Empty/obj_Empty.yy",},},
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},},
     {"id":{"name":"obj_gamecontroller","path":"objects/obj_gamecontroller/obj_gamecontroller.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
@@ -90,6 +91,7 @@
     {"id":{"name":"obj_player_turtle","path":"objects/obj_player_turtle/obj_player_turtle.yy",},},
     {"id":{"name":"obj_rift_forest","path":"objects/obj_rift_forest/obj_rift_forest.yy",},},
     {"id":{"name":"obj_sideBody","path":"objects/obj_sideBody/obj_sideBody.yy",},},
+    {"id":{"name":"obj_SideNode","path":"objects/obj_SideNode/obj_SideNode.yy",},},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},},
     {"id":{"name":"SidewinderManager","path":"objects/SidewinderManager/SidewinderManager.yy",},},
     {"id":{"name":"char_selection_room","path":"rooms/char_selection_room/char_selection_room.yy",},},
