@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 /// @description take in the animation state and plays apropriate animation
 //shortcut for what each number means
 //0 = idle
@@ -13,34 +11,34 @@
 switch(animation_state)
 {
 	case 0: //idle no item
-	sprite_index = spr_player_dragon_idle
+	sprite_index = spr_dragon_idle
 	break;
 	
 	case 1: //walking no item
-	sprite_index = spr_player_dragon_walk
+	sprite_index = spr_dragon_walk
 	break;
 	
 	case 2: //jumping rising no item
-	sprite_index = spr_player_dragon_jump_rising
+	sprite_index = spr_dragon_jump_rising
 	break;
 	
 	case 3: //jumping falling no item
-	sprite_index = spr_player_dragon_jump_falling
+	sprite_index = spr_dragon_jump_falling
 	break;
 	
 	case 4: //idle with item
-	sprite_index = spr_player_dragon_idle_itemhold
+	sprite_index = spr_dragon_idle_itemhold
 	break;
 	
 	case 5: //walking with item
-	sprite_index = spr_player_dragon_walk_itemhold
+	sprite_index = spr_dragon_itemhold_walk
 	break;
 	
 	case 6: //jumping rising with item
-	sprite_index = spr_player_dragon_jump_rising_itemhold
+	sprite_index = spr_dragon_itemhold_rising
 	break;
 	
 	case 7: //jumping falling with item
-	sprite_index = spr_player_dragon_jump_falling_itemhold
+	sprite_index = spr_dragon_item_falling
 	break;	
 }

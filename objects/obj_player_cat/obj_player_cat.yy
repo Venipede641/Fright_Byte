@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cat_idle",
+    "path":"sprites/spr_cat_idle/spr_cat_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

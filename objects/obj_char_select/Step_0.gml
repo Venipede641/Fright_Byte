@@ -9,6 +9,6 @@ if (keyboard_check_pressed(vk_left)) {
 if (keyboard_check_pressed(vk_space)) {
     // Transition to Room1
 	global.character_spawning = true;  // Set the flag
-	global.current_room = rm_start;
+	global.current_room = rm_begin;
 	room_goto(global.current_room);
 }
