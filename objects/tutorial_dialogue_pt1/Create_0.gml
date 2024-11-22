@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
+audio_play_sound(mus_tutorial,10,true)
 
 dialogue.add(spr_MousePort,"You're finally awake! It's been awhile let me help you get your bearings (Press z to continue)")
 dialogue.add(spr_MousePort,"You can move with arrow keys and jump with space...")
