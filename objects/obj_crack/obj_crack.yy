@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_game_breaker",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_crack",
+  "eventList":[],
   "managed":true,
-  "name":"obj_game_breaker",
+  "name":"obj_crack",
   "overriddenProperties":[],
   "parent":{
-    "name":"meta",
-    "path":"folders/Objects/meta.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_crack_big",
+    "path":"sprites/spr_crack_big/spr_crack_big.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
