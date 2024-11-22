@@ -5,5 +5,5 @@
 event_inherited();
 
 
-dialogue.add(spr_box,"Hey you made it up here!")
-dialogue.add(spr_exit_test,"I am in the door at the end of the hall.")
+dialogue.add(spr_MousePort,"Hey you made it up here!")
+dialogue.add(spr_MousePort,"I am in the door at the end of the hall.")

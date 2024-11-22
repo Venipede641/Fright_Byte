@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_mouseman",
+  "%Name":"dia_Mouse1",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":90,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_mouseman",
+  "name":"dia_Mouse1",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPCs",
-    "path":"folders/Objects/NPCs.yy",
+    "name":"tutorial dialogue",
+    "path":"folders/Objects/tutorial dialogue.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"DialogueParent",
+    "path":"objects/DialogueParent/DialogueParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Mouseman",
-    "path":"sprites/spr_Mouseman/spr_Mouseman.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
