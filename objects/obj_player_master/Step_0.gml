@@ -59,6 +59,9 @@ else
 	        y = xcollison.targetYPosition;
 	    }
 	    break;
+		case 7: //water, ignore x factor
+		x += x_velocity;
+	    break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
@@ -142,6 +145,23 @@ else
 	        x = ycollison.targetXPosition;
 	        y = ycollison.targetYPosition;
 	    }
+	    break;
+		
+		case 7: //water, if going to make contact "float" in the water
+		if(can_be_wet)
+		{
+		 y = ycollison.y-40
+		 on_ground = true
+		is_falling = false
+		is_jumping = false
+		in_air = false
+		y_velocity = 0
+		in_water = true
+		}
+		else
+		{
+			y+= y_velocity
+		}
 	    break;
 		
 		default: //incase, treat it like regular ground

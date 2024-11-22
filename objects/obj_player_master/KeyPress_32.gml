@@ -13,7 +13,17 @@ if(on_ground)
 	global.jumping = true;
 	global.janchorX = x;
 	global.janchorY = y;
+	if(in_water)
+	{
+	y_velocity = jump_power/1.5
+	in_water = false
+	can_be_wet = false
+	alarm[3] = .25 * game_get_speed(gamespeed_fps)
+	}
+	else
+	{
 	y_velocity = jump_power
+	}
 	on_ground =false
 	is_jumping = true
 	in_air = true
