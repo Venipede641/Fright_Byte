@@ -3,6 +3,12 @@ if (global.is_paused) {
 	exit;	
 }
 
+//Stop our movement if we are in dialogue
+if(global.inDialogue)
+{
+	x_velocity = 0
+}
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {
