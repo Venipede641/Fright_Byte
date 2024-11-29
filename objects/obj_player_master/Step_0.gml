@@ -3,6 +3,12 @@ if (global.is_paused) {
 	exit;	
 }
 
+//Stop our movement if we are in dialogue
+if(global.inDialogue)
+{
+	x_velocity = 0
+}
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {
@@ -59,6 +65,9 @@ else
 	        x = xcollison.targetXPosition;
 	        y = xcollison.targetYPosition;
 	    }
+	    break;
+		case 7: //water, ignore x factor
+		x += x_velocity;
 	    break;
 		
 		case 6: // portals
@@ -156,6 +165,22 @@ else
 	    }
 	    break;
 		
+		case 7: //water, if going to make contact "float" in the water
+		if(can_be_wet)
+		{
+		 y = ycollison.y-40
+		 on_ground = true
+		is_falling = false
+		is_jumping = false
+		in_air = false
+		y_velocity = 0
+		in_water = true
+		}
+		else
+		{
+			y+= y_velocity
+		}
+	    break;
 		case 6: // portals
 		// Allow the player to move freely past the portal
 		if(bbox_bottom >= ycollison.bbox_bottom && is_falling == true)

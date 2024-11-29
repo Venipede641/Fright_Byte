@@ -1,5 +1,6 @@
 /// @description throw item
 // You can write your code in this editor
+if(global.inDialogue){return}
 if(is_holding_item == true) 
 {
 	is_holding_item = false
