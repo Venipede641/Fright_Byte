@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_racecar_spawner",
+  "%Name":"concessions_entrance_dialogue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":58,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_racecar_spawner",
+  "name":"concessions_entrance_dialogue",
   "overriddenProperties":[],
   "parent":{
     "name":"race_level_specific",
     "path":"folders/Objects/race_level_specific.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"DialogueParent",
+    "path":"objects/DialogueParent/DialogueParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

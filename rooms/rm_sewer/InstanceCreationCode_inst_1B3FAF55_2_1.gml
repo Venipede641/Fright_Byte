@@ -1,3 +1,3 @@
 targetRoomId = rm_concessions_4
-targetXPosition = 1550
+targetXPosition = 780
 targetYPosition = 670

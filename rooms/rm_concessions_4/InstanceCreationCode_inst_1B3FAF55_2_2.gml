@@ -1,3 +1,3 @@
-targetRoomId = rm_race_start
+targetRoomId = rm_sewer
 targetXPosition = 800
-targetYPosition = 100
+targetYPosition = 80

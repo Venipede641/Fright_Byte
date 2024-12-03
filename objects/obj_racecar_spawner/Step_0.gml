@@ -3,7 +3,7 @@ spawn_timer--;
 
 if (spawn_timer <= 0 && !global.is_paused && !global.inDialogue) { // stop vehicle spawning if in dialogue or game is paused
     // Reset the spawn timer
-    spawn_timer = irandom_range(60, 180); // Random interval between 1-3 seconds
+    spawn_timer = irandom_range(60, 120); // Random interval between 1-2 seconds
 
     // Determine random spawn position: ground or above ground
     var spawn_y;

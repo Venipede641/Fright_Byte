@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_racecar",
+  "%Name":"obj_racecar_opponent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_racecar",
+  "name":"obj_racecar_opponent",
   "overriddenProperties":[],
   "parent":{
     "name":"enemies",
