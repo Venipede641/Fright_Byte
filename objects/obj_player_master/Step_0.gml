@@ -9,6 +9,18 @@ if(global.inDialogue)
 	x_velocity = 0
 }
 
+
+
+if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_lantern) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+    add_to_inventory(obj_lantern, spr_lantern); // Call inventory function
+}
+
+
+
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {

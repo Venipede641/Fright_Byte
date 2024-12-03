@@ -1,0 +1,1 @@
+global.spawned_item = noone;

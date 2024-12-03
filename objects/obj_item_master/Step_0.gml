@@ -84,7 +84,10 @@ else
 		{
 			x+= x_velocity
 		}
-		break
+		break;
+		
+		case 8: // Basketball bounce logic
+                break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
@@ -173,6 +176,9 @@ else
 			y+= y_velocity
 		}
 		break
+		
+		case 8: // Basketball bounce logic
+	    break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)

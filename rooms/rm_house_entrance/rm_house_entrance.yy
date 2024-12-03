@@ -71,6 +71,7 @@
     {"name":"inst_7C52C7BE","path":"rooms/rm_house_entrance/rm_house_entrance.yy",},
     {"name":"inst_338611C1","path":"rooms/rm_house_entrance/rm_house_entrance.yy",},
     {"name":"inst_55FA74C7","path":"rooms/rm_house_entrance/rm_house_entrance.yy",},
+    {"name":"inst_1DC486A5","path":"rooms/rm_house_entrance/rm_house_entrance.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -140,6 +141,7 @@
         {"$GMRInstance":"v1","%Name":"inst_7C52C7BE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7C52C7BE","objectId":{"name":"obj_SideNode","path":"objects/obj_SideNode/obj_SideNode.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1520.0,"y":640.0,},
         {"$GMRInstance":"v1","%Name":"inst_338611C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_338611C1","objectId":{"name":"obj_SideNode","path":"objects/obj_SideNode/obj_SideNode.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":640.0,},
         {"$GMRInstance":"v1","%Name":"inst_55FA74C7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55FA74C7","objectId":{"name":"obj_SideNode","path":"objects/obj_SideNode/obj_SideNode.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":560.0,},
+        {"$GMRInstance":"v1","%Name":"inst_1DC486A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1DC486A5","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":80.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_49E83431","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_49E83431","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"x":320.0,"y":640.0,},
