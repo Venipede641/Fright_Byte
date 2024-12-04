@@ -1,13 +1,15 @@
 function add_to_inventory(item_object, item_sprite) {
-    // Check if item is already in the inventory (based on object ID)
-    
-
+	if(item_object == obj_racecar){//ensure racecar always goes in last slot
+		global.inventory_slots[4].item = item_object; // Store object ID
+        global.inventory_slots[4].sprite = item_sprite; // Assign sprite
+		return;
+	}
+	
     // If no duplicate, add item to first empty slot
     for (var i = 0; i < array_length(global.inventory_slots); i++) {
         if (global.inventory_slots[i].item == noone) { // Find an empty slot
             global.inventory_slots[i].item = item_object; // Store object ID
             global.inventory_slots[i].sprite = item_sprite; // Assign sprite
-            show_debug_message("Lantern added to slot " + string(i));
 			global.empty_inventory = false; // may want to move this somewhere else
             return; // Exit after adding
         }
