@@ -8,8 +8,7 @@ function add_to_inventory(item_object, item_sprite) {
             global.inventory_slots[i].item = item_object; // Store object ID
             global.inventory_slots[i].sprite = item_sprite; // Assign sprite
             show_debug_message("Lantern added to slot " + string(i));
-			global.lantern_grabbed = true;
-			global.empty_inventory = false; // may want tomove this somewhere else
+			global.empty_inventory = false; // may want to move this somewhere else
             return; // Exit after adding
         }
     }

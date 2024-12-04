@@ -57,6 +57,7 @@
     {"name":"inst_3EDDE597","path":"rooms/rm_begin/rm_begin.yy",},
     {"name":"inst_7CD90F3B","path":"rooms/rm_begin/rm_begin.yy",},
     {"name":"inst_212AE05E","path":"rooms/rm_begin/rm_begin.yy",},
+    {"name":"inst_7645CD46","path":"rooms/rm_begin/rm_begin.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -112,6 +113,7 @@
         {"$GMRInstance":"v1","%Name":"inst_3EDDE597","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3EDDE597","objectId":{"name":"obj_basketball","path":"objects/obj_basketball/obj_basketball.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":520.0,"y":680.0,},
         {"$GMRInstance":"v1","%Name":"inst_7CD90F3B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CD90F3B","objectId":{"name":"obj_lantern","path":"objects/obj_lantern/obj_lantern.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1040.0,"y":680.0,},
         {"$GMRInstance":"v1","%Name":"inst_212AE05E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_212AE05E","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":80.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7645CD46","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7645CD46","objectId":{"name":"obj_racecar","path":"objects/obj_racecar/obj_racecar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1240.0,"y":680.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_7649F920_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7649F920_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"x":400.0,"y":640.0,},
