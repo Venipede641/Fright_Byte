@@ -1,5 +1,5 @@
 function add_to_inventory(item_object, item_sprite) {
-	if(item_object == obj_racecar){//ensure racecar always goes in last slot
+	if(item_object == obj_racecar){//ensure racecar always goes in last slot... This may get deleted as its not super necessary
 		global.inventory_slots[4].item = item_object; // Store object ID
         global.inventory_slots[4].sprite = item_sprite; // Assign sprite
 		return;
