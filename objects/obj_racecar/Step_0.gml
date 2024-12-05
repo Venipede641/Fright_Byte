@@ -42,13 +42,13 @@ if (is_being_driven)
     if (obj_player_master.image_xscale > 0)
     {
         // Facing right
-        x = obj_player_master.x + 50; // adjust as needed
+        x = obj_player_master.x - 10; // adjust as needed
         image_xscale = 1;
     }
     else
     {
         // Facing left
-        x = obj_player_master.x - 50; // adjust as needed
+        x = obj_player_master.x + 10; // adjust as needed
         image_xscale = -1;
     }
     

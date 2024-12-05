@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_racecar",
-    "path":"sprites/spr_racecar/spr_racecar.yy",
+    "name":"spr_racecar_opponent",
+    "path":"sprites/spr_racecar_opponent/spr_racecar_opponent.yy",
   },
   "spriteMaskId":null,
   "visible":true,

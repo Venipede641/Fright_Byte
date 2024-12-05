@@ -266,6 +266,7 @@
     {"id":{"name":"spr_player_turtle_walk","path":"sprites/spr_player_turtle_walk/spr_player_turtle_walk.yy",},},
     {"id":{"name":"spr_race_bg","path":"sprites/spr_race_bg/spr_race_bg.yy",},},
     {"id":{"name":"spr_race_fence","path":"sprites/spr_race_fence/spr_race_fence.yy",},},
+    {"id":{"name":"spr_racecar_opponent","path":"sprites/spr_racecar_opponent/spr_racecar_opponent.yy",},},
     {"id":{"name":"spr_racecar","path":"sprites/spr_racecar/spr_racecar.yy",},},
     {"id":{"name":"spr_refrigerator","path":"sprites/spr_refrigerator/spr_refrigerator.yy",},},
     {"id":{"name":"spr_rift_forest","path":"sprites/spr_rift_forest/spr_rift_forest.yy",},},

@@ -14,7 +14,7 @@ function use_selected_item(item_object) {
     if (item_object != noone) {
         var spawn_x, spawn_y;
 
-        if (item_object == obj_racecar) {  // Race car spawns differently
+        if (item_object == obj_racecar) {  // Race car spawns in front of player instead of above them
             spawn_x = obj_player_master.x;
             spawn_y = obj_player_master.y;
         } else {

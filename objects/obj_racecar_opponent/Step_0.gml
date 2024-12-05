@@ -4,7 +4,7 @@ if(!global.is_paused){ // only move if game is not paused
 }
 
 // Destroy when off-screen
-if (x < -sprite_width) {
+if (x < 0) {
     instance_destroy();
 	show_debug_message("car doesnt exist");
 }
