@@ -102,6 +102,7 @@
     {"id":{"name":"obj_health_pickup","path":"objects/obj_health_pickup/obj_health_pickup.yy",},},
     {"id":{"name":"obj_inventory_data_manager","path":"objects/obj_inventory_data_manager/obj_inventory_data_manager.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
+    {"id":{"name":"obj_item_destroyed","path":"objects/obj_item_destroyed/obj_item_destroyed.yy",},},
     {"id":{"name":"obj_item_master","path":"objects/obj_item_master/obj_item_master.yy",},},
     {"id":{"name":"obj_key_door_vertical","path":"objects/obj_key_door_vertical/obj_key_door_vertical.yy",},},
     {"id":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},},

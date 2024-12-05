@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(showing_dialogue)
 {
-	show_debug_message("Starting GUI!")
+	//show_debug_message("Starting GUI!")
 	var text_x = 30;
 	var text_y = 18;
 	var height = 32;

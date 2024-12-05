@@ -6,4 +6,4 @@ global.lantern_grabbed = false;
 global.in_car = false;
 global.car_grabbed = false;
 
-global.spawned_item = noone;
+spawned_item = noone;

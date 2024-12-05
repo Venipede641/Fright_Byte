@@ -1,20 +1,27 @@
 function use_selected_item(item_object) {
     // Check if the item is valid and not already spawned
     // Only spawn the item if there isn't one already spawned in the room
-	if(global.spawned_item != noone){
-		instance_destroy(global.spawned_item);
-		global.spawned_item = noone;
-	}
-    if (item_object != noone && global.spawned_item == noone) {
-        // Spawn the item in front of the player
-		if(item_object == obj_racecar){  // race car spawns at a different position
-			var spawn_x = obj_player_master.x ;  // Adjust X position if needed
-			var spawn_y = obj_player_master.y;       // Y position in front of player
-			global.spawned_item = instance_create_layer(spawn_x, spawn_y, "Instances", item_object);
-			exit;
-		}
-        var spawn_x = obj_player_master.x ;  // Adjust X position if needed
-        var spawn_y = obj_player_master.y - 80;       // Y position in front of player
-        global.spawned_item = instance_create_layer(spawn_x, spawn_y, "Instances", item_object);
+	// Destroy the existing item if it exists
+	//show_debug_message("Spawned item: " + string(spawned_item));
+    if (obj_inventory_data_manager.spawned_item != noone) {
+		 obj_player_master.is_holding_item = false;
+            var destroy_x = obj_inventory_data_manager.spawned_item.x;
+            var destroy_y = obj_inventory_data_manager.spawned_item.y;
+            instance_destroy(obj_inventory_data_manager.spawned_item);
+            instance_create_layer(destroy_x, destroy_y, "Instances", obj_item_destroyed);   
+    }
+    // Spawn the new item
+    if (item_object != noone) {
+        var spawn_x, spawn_y;
+
+        if (item_object == obj_racecar) {  // Race car spawns differently
+            spawn_x = obj_player_master.x;
+            spawn_y = obj_player_master.y;
+        } else {
+            spawn_x = obj_player_master.x;
+            spawn_y = obj_player_master.y - 80;
+        }
+        instance_create_layer(spawn_x, spawn_y, "Instances", item_object);
+		obj_inventory_data_manager.spawned_item = item_object;
     }
 }
