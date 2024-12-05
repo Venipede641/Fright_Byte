@@ -33,7 +33,7 @@ for (var i = 0; i < slots; i++) {
     // Draw slot number (for clarity)
     draw_set_halign(fa_right);
     draw_set_valign(fa_bottom);
-    draw_text(slot_x + slot_width - 5, inv_y + slot_height - 5 + 10, string(i + 1)); // Adjusted text position
+    draw_text(slot_x + slot_width / 2 - 12, inv_y + slot_height + 12, string(i + 1)); // Adjusted text position
 }
 
 // Reset drawing settings
