@@ -21,14 +21,22 @@ for (var i = 0; i < slots; i++) {
 
     // Draw item sprite with conditional scaling
     var sprite_scale = 0.5; // Default scale
-    if (current_slot.item != noone) {
-        if (current_slot.item == obj_racecar) {
-            sprite_scale = 0.2; // Shrink racecar more because it is so big
-        }
-        draw_sprite_ext(current_slot.sprite, 0, 
-                        slot_x + (slot_width / 2), inv_y + (slot_height / 2) + 10,  // Centered in slot
-                        sprite_scale, sprite_scale, 0, c_white, 1);
-    }
+    // Draw item sprite (or spr_mystery if no item exists)
+	if (current_slot.sprite != noone) { 
+	    var sprite_scale = (current_slot.item == obj_racecar) ? 0.2 : 0.5; // Special scaling for racecar
+	    draw_sprite_ext(
+	        current_slot.sprite, 0, 
+	        slot_x + (slot_width / 2), inv_y + (slot_height / 2) + 10, 
+	        sprite_scale, sprite_scale, 0, c_white, 1
+	    );
+	} else {
+	    // Fallback to draw mystery sprite
+	    draw_sprite_ext(
+	        spr_mystery, 0, 
+	        slot_x + (slot_width / 2), inv_y + (slot_height / 2) + 10, 
+	        0.5, 0.5, 0, c_white, 1
+	    );
+	}
 
     // Draw slot number (for clarity)
     draw_set_halign(fa_right);
