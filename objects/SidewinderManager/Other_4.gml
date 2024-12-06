@@ -1,5 +1,6 @@
 SideWinderScript()
 
+length = 10
 if(global.chase)
 {
 active = false

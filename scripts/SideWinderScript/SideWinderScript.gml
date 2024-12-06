@@ -2,6 +2,41 @@
 function SideWinderScript(){
 	
 	global.colPath = mp_grid_create(0,0,20,10,80,80);
+
+	
+	with(obj_ground)
+	{
+		mp_grid_add_cell(global.colPath,floor(x/80),floor(y/80))
+	}
+	
+	with(obj_collison_box)
+	{
+		mp_grid_add_cell(global.colPath,floor(x/80),floor(y/80))
+	}
+	
+	global.segPath = mp_grid_create(0,0,20,10,80,80);
+
+	
+	with(obj_ground)
+	{
+		mp_grid_add_cell(global.segPath,floor(x/80),floor(y/80))
+	}
+	
+	with(obj_collison_box)
+	{
+		mp_grid_add_cell(global.segPath,floor(x/80),floor(y/80))
+	}
+	
+	
+	
+
+
+}
+
+function UpdateColPath()
+{
+	global.colPath = mp_grid_create(0,0,20,10,80,80);
+
 	
 	with(obj_ground)
 	{
@@ -14,12 +49,12 @@ function SideWinderScript(){
 	}
 	
 	
+	with(obj_sideSegment)
+	{
+		//mp_grid_add_cell(global.colPath,floor(x/80),floor(y/80))
+	}
 	
-	
-
-
 }
-
 function SideWinderUpdate(bodyPart)
 {
 		global.pathPlayer = path_add();
