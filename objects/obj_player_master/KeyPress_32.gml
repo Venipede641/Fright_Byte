@@ -1,6 +1,7 @@
 /// @description jump
 // You can write your code in this editor
 if(global.inDialogue){return}
+if(global.in_car){return}
 if(on_ground)
 {
 	if(instance_place(x,y+10,obj_platform) && keyboard_check(vk_down)) //if the player is on a platform and holding down, passthrough it

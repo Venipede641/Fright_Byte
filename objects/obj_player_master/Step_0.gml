@@ -9,6 +9,31 @@ if(global.inDialogue)
 	x_velocity = 0
 }
 
+
+
+if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_lantern) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.lantern_grabbed = true;
+    add_to_inventory(obj_lantern, spr_lantern); // Call inventory function
+}
+
+if (!global.car_grabbed && place_meeting(x + 10, y + 5, obj_racecar)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_racecar) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.car_grabbed = true;
+    add_to_inventory(obj_racecar, spr_racecar); // Call inventory function
+}
+
+if(global.in_car){ // speed doubles while in racecar
+	x_velocity *= 2	
+	
+}
+
+
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {
