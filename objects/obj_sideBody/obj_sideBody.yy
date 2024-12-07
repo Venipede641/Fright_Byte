@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_testingBody",
-    "path":"sprites/spr_testingBody/spr_testingBody.yy",
+    "name":"swheadleft",
+    "path":"sprites/swheadleft/swheadleft.yy",
   },
   "spriteMaskId":null,
   "visible":true,

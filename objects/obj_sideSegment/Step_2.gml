@@ -57,4 +57,127 @@ for(i = 0; i<num; i++)
 				
 			}
 	
+
+	//CODE FOR SPRITE
+	
+if(sprite_index != swbodystraight && sprite_index != swbodystraightup && turntimer!=0)
+{
+	turntimer--
+	return
+}
+
+if(y<yprevious)
+{
+	ystatus ="up"
+}
+if(y>yprevious)
+{
+	ystatus ="down"
+}
+
+if(x<xprevious)
+{
+	xstatus = "left"
+}
+
+if(x>xprevious)
+{
+	xstatus = "right"
+}
+	
+if(targetPosition[0]<x && point_distance(0,targetPosition[1],0,y)<=5) // going left
+{
+	if(sprite_index == swbodystraightup)
+	{
+		if(ystatus=="up")
+		{sprite_index = swelbowupleft}
+		else{sprite_index=  swdownleft}
+	}
+	else{sprite_index = swbodystraight}
+	
+}
+
+if(targetPosition[0]>x && point_distance(0,targetPosition[1],0,y)<=5) // goin right
+{
+	if(sprite_index == swbodystraightup)
+	{
+		if(ystatus=="up")
+		{sprite_index = swelbowdupright}
+		else{sprite_index= swdownright}
+	}
+	else{sprite_index = swbodystraight}
+}
+
+if(targetPosition[1]<y && point_distance(0,targetPosition[0],0,x)<=5) // going up
+{
+	if(sprite_index == swbodystraight)
+	{
+		if(xstatus=="left")
+		{sprite_index = swdownright}
+		else{sprite_index= swdownleft}
+	}
+	else{sprite_index = swbodystraightup}
+}
+
+if(targetPosition[1]>y && point_distance(0,targetPosition[0],0,x)<=5) // going down
+{
+	if(sprite_index == swbodystraight)
+	{
+		if(xstatus=="left")
+		{sprite_index = swelbowdupright}
+		else{sprite_index= swelbowupleft}
+	}
+	else{sprite_index = swbodystraightup}
+}
+
+if(turntimer==0){turntimer=turntimercap}
+
+/*
+if(x < xprevious) // going left
+{
+	if(sprite_index == swbodystraightup)
+	{
+		if(ystatus=="up")
+		{sprite_index = swelbowupleft}
+		else{sprite_index=  swdownleft}
+	}
+	else{sprite_index = swbodystraight}
+	
+}
+
+if(x > xprevious) // goin right
+{
+	if(sprite_index == swbodystraightup)
+	{
+		if(ystatus=="up")
+		{sprite_index = swelbowdupright}
+		else{sprite_index= swdownright}
+	}
+	else{sprite_index = swbodystraight}
+}
+
+if(y < yprevious) // going up
+{
+	if(sprite_index == swbodystraight)
+	{
+		if(xstatus=="left")
+		{sprite_index = swdownright}
+		else{sprite_index= swdownleft}
+	}
+	else{sprite_index = swbodystraightup}
+}
+
+if(y > yprevious) // going down
+{
+	if(sprite_index == swbodystraight)
+	{
+		if(xstatus=="left")
+		{sprite_index = swelbowdupright}
+		else{sprite_index= swelbowupleft}
+	}
+	else{sprite_index = swbodystraightup}
+}
+
+if(turntimer==0){turntimer=turntimercap}*/
+
 	
