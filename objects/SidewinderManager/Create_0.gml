@@ -5,12 +5,17 @@ global.sidewinderSize = 8
 global.chase = false
 global.chaseStart = false
 active = false
+length = 10
 waitTimerCap = 1
 waitTimer = waitTimerCap
 frameTimer= 60
 firstNodeX = 0
 firstNodeY = 0
 spawned = false
+spawncap = 7;
+spawncapfirst = 8;
+spawntimer = spawncapfirst;
+
 
 global.cutChasex = 0
 global.cutChasey = 0 
