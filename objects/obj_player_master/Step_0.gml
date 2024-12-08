@@ -9,6 +9,31 @@ if(global.inDialogue)
 	x_velocity = 0
 }
 
+
+
+if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_lantern) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.lantern_grabbed = true;
+    add_to_inventory(obj_lantern, spr_lantern); // Call inventory function
+}
+
+if (!global.car_grabbed && place_meeting(x + 10, y + 5, obj_racecar)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_racecar) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.car_grabbed = true;
+    add_to_inventory(obj_racecar, spr_racecar_moving); // Call inventory function
+}
+
+if(global.in_car){ // speed doubles while in racecar
+	x_velocity *= 2	
+	
+}
+
+
+
 /// @description runs game movement and animations
 if(y_velocity > 0) //check if we're falling
 {
@@ -79,6 +104,15 @@ else
 	        x = xcollison.targetXPosition;
 	        y = xcollison.targetYPosition;
 	    }
+		break;
+		case 8:
+		move_and_collide(x_velocity,0,obj_collidable_master)
+		x_velocity = 0
+		break;
+		
+		case 9:
+			player_health --;
+			x += x_velocity
 		break;
 		
 		default: //incase, treat it like regular ground
@@ -181,9 +215,12 @@ else
 			y+= y_velocity
 		}
 	    break;
+		
 		case 6: // portals
+		y += y_velocity;
+				
 		// Allow the player to move freely past the portal
-		if(bbox_bottom >= ycollison.bbox_bottom && is_falling == true)
+		/*if(bbox_bottom >= ycollison.bbox_bottom && is_falling == true)
 		{
 			y = ycollison.bbox_bottom -40
 			on_ground = true
@@ -195,7 +232,7 @@ else
 		else
 		{
 	        y += y_velocity; // Apply gravity only if the player is not grounded
-		}
+		}*/
 		// Check if the up arrow is pressed and the door is unlocked
 	    if (keyboard_check_pressed(vk_up)) {
 	        // Teleport the player when the key is pressed
@@ -203,6 +240,16 @@ else
 	        x = xcollison.targetXPosition;
 	        y = xcollison.targetYPosition;
 	    }
+		break;
+		
+		case 8:
+			move_and_collide(x_velocity,0,obj_collidable_master)
+			x_velocity = 0
+		break;
+		
+		case 9: // race opponent
+			player_health --;
+			y += y_velocity
 		break;
 		
 		default: //incase, treat it like regular ground

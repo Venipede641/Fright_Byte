@@ -5,3 +5,4 @@ if (global.character_spawning) {
 
 global.break_game = false;
 global.spawn_rifts = false;
+

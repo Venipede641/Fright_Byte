@@ -11,7 +11,7 @@ if(showing_dialogue == false)
 	}
 
 	current_dialogue = dialogue.pop();
-	show_debug_message("Added to current dialogue!")
+	// show_debug_message("Added to current dialogue!")
 	showing_dialogue = true;
 }
 else
