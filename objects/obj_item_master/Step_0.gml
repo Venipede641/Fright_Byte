@@ -60,9 +60,9 @@ else
 		}
 		else
 		{
-		move_and_collide(x_velocity,0,obj_collidable_master)
-		is_falling = false
-		x_velocity = 0
+			move_and_collide(x_velocity,0,obj_collidable_master)
+			is_falling = false
+			x_velocity = 0
 		}
 		break;
 		
@@ -86,8 +86,50 @@ else
 		}
 		break;
 		
-		case 8: // Basketball bounce logic
-                break;
+		case 8: // tire
+			if(item_property == 2)
+			{
+				if(!being_thrown)
+				{
+					if(global.tire_connected = 1){
+						instance_create_layer(xcollison.x, xcollison.y,"Instances", obj_racecar)
+						instance_destroy(xcollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 2;
+						instance_destroy()			
+					}
+					else {
+						instance_create_layer(xcollison.x, xcollison.y,"Instances", obj_half_broken_car)
+						instance_destroy(xcollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 1;
+						instance_destroy()	
+					}
+				}
+				else
+				{
+					if(global.tire_connected= 1){
+						instance_create_layer(xcollison.x, xcollison.y,"Instances", obj_racecar)
+						instance_destroy(xcollison)
+						global.tire_connected = 2;
+						instance_destroy()
+					}
+					else {
+						instance_create_layer(xcollison.x, xcollison.y,"Instances", obj_half_broken_car)
+						instance_destroy(xcollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 1;
+						instance_destroy()	
+					}
+				}
+			}
+			else
+			{
+				move_and_collide(x_velocity,0,obj_collidable_master)
+				is_falling = false
+				x_velocity = 0
+			}
+            break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
@@ -150,7 +192,7 @@ else
 		}
 		else
 		{
-		move_and_collide(0,y_velocity,obj_collidable_master)
+			move_and_collide(0,y_velocity,obj_collidable_master)
 			is_falling = false
 			y_velocity = 0
 		}
@@ -177,8 +219,50 @@ else
 		}
 		break
 		
-		case 8: // Basketball bounce logic
-	    break;
+		case 8: // tire
+			if(item_property == 2)
+			{
+				if(!being_thrown)
+				{
+					if(global.tire_connected = 1){ //1 tire must connect before the car can be fixed
+						instance_create_layer(ycollison.x,ycollison.y,"Instances", obj_racecar)
+						instance_destroy(ycollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 2;
+						instance_destroy()
+					}
+					else {
+						instance_create_layer(ycollison.x,ycollison.y,"Instances", obj_half_broken_car)
+						instance_destroy(ycollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 1
+						instance_destroy()
+					}
+				}
+				else
+				{
+					if(global.tire_connected = 1){
+						instance_create_layer(ycollison.x,ycollison.y,"Instances", obj_racecar)
+						instance_destroy(ycollison)
+						global.tire_connected = 2;
+						instance_destroy()
+					}
+					else {
+						instance_create_layer(ycollison.x,ycollison.y,"Instances", obj_half_broken_car)
+						instance_destroy(ycollison)
+						obj_player_master.is_holding_item = false
+						global.tire_connected = 1
+						instance_destroy()
+					}
+				}
+			}
+			else
+			{
+				move_and_collide(x_velocity,0,obj_collidable_master)
+				is_falling = false
+				x_velocity = 0
+			}
+            break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)

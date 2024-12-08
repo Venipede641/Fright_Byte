@@ -6,4 +6,6 @@ global.lantern_grabbed = false;
 global.in_car = false;
 global.car_grabbed = false;
 
+global.tire_connected = 0;
+
 spawned_item = noone;

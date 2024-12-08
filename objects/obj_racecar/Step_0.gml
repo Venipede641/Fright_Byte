@@ -21,6 +21,7 @@ if (place_meeting(x + 10, y +5, obj_player_master) && keyboard_check_pressed(vk_
     {
 		persistent = true;
 		global.in_car = true;
+		audio_play_sound(sfx_car_idle, 1, true);
         // Store original player state
         with (obj_player_master) {
             // Position player behind the car
@@ -30,6 +31,9 @@ if (place_meeting(x + 10, y +5, obj_player_master) && keyboard_check_pressed(vk_
 	}
     else
     {
+		sprite_index = spr_racecar_idle;
+		audio_stop_sound(sfx_racecar_acceleration); // Stop moving sound
+		audio_stop_sound(sfx_car_idle); // Stop moving sound
 		persistent = false;
 		global.in_car = false;
         // Restore player state
@@ -53,4 +57,24 @@ if (is_being_driven)
     }
     
     y = obj_player_master.y;
+	
+	
+	// Track the previous state to detect changes
+	var was_moving = sprite_index == spr_racecar_moving;
+	
+	// Check for movement to toggle sprite
+    if (abs(obj_player_master.x_velocity) > 0) {
+        sprite_index = spr_racecar_moving; // Moving sprite
+		// Play moving sound if transitioning from idle to moving
+	    if (!was_moving) {
+			audio_stop_sound(sfx_car_idle); // Stop idle sound
+	        audio_play_sound(sfx_racecar_acceleration, 1, true); // Replace with your moving sound name
+	    }
+    } else {
+        sprite_index = spr_racecar_idle; // Idle sprite
+		if (was_moving) {
+			audio_stop_sound(sfx_racecar_acceleration); // Stop moving sound
+			audio_play_sound(sfx_car_idle, 1, true); // Replace with your idle sound name
+		}
+    }
 }
