@@ -8,8 +8,8 @@
   "name":"obj_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"type4: exit",
-    "path":"folders/Objects/level_geometry/collidables/type4: exit.yy",
+    "name":"room exit",
+    "path":"folders/Objects/level_geometry/collidables/room exit.yy",
   },
   "parentObjectId":{
     "name":"obj_collidable_master",
