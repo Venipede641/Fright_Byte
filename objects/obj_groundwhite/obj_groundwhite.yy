@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collison_box",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_groundwhite",
+  "eventList":[],
   "managed":true,
-  "name":"obj_collison_box",
+  "name":"obj_groundwhite",
   "overriddenProperties":[],
   "parent":{
     "name":"type1: solids",
     "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
   },
   "parentObjectId":{
-    "name":"obj_collidable_master",
-    "path":"objects/obj_collidable_master/obj_collidable_master.yy",
+    "name":"obj_collison_box",
+    "path":"objects/obj_collison_box/obj_collison_box.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collision_box",
-    "path":"sprites/spr_collision_box/spr_collision_box.yy",
+    "name":"spr_health_pickup",
+    "path":"sprites/spr_health_pickup/spr_health_pickup.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
