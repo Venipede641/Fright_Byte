@@ -1,3 +1,3 @@
-targetXPosition = 40
-targetYPosition = 680
-targetRoomId = rm_house_entrance
+targetXPosition = 1520
+targetYPosition = 650
+targetRoomId = rm_forest_start
