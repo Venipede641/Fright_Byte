@@ -144,6 +144,7 @@
     {"id":{"name":"rm_forest_02","path":"rooms/rm_forest_02/rm_forest_02.yy",},},
     {"id":{"name":"rm_forest_basement","path":"rooms/rm_forest_basement/rm_forest_basement.yy",},},
     {"id":{"name":"rm_forest_cabin","path":"rooms/rm_forest_cabin/rm_forest_cabin.yy",},},
+    {"id":{"name":"rm_forest_cave","path":"rooms/rm_forest_cave/rm_forest_cave.yy",},},
     {"id":{"name":"rm_forest_start","path":"rooms/rm_forest_start/rm_forest_start.yy",},},
     {"id":{"name":"rm_game_over","path":"rooms/rm_game_over/rm_game_over.yy",},},
     {"id":{"name":"rm_house_entrance","path":"rooms/rm_house_entrance/rm_house_entrance.yy",},},
@@ -308,6 +309,7 @@
     {"roomId":{"name":"rm_forest_01","path":"rooms/rm_forest_01/rm_forest_01.yy",},},
     {"roomId":{"name":"rm_forest_02","path":"rooms/rm_forest_02/rm_forest_02.yy",},},
     {"roomId":{"name":"rm_forest_basement","path":"rooms/rm_forest_basement/rm_forest_basement.yy",},},
+    {"roomId":{"name":"rm_forest_cave","path":"rooms/rm_forest_cave/rm_forest_cave.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
