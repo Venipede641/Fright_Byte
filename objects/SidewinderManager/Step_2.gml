@@ -44,17 +44,38 @@ with(obj_SideNode)
 if(global.cutChasex != 0 || global.cutChasey != 0)
 {
 	bodyPart = instance_create_layer(global.cutChasex, global.cutChasey, "Instances", obj_sideBody);
+	firstNodeX = global.cutChasex
+	firstNodeY = global.cutChasey
 	global.cutChasex = 0
 	global.cutChasey = 0
+	
 }
 else{bodyPart = instance_create_layer(currentNode.x, currentNode.y, "Instances", obj_sideBody);}
 spawned = true
 //bodyPart = instance_create_layer(1000, 520, "Instances", obj_sideBody);
 global.chaseStart = false
 global.chase = true
+//might be bad code?
+firstNodeX = currentNode.x
+firstNodeY = currentNode.y
 active = true;
 }
 
+//if active, tick down a timer on update to spawn the next segment, then the next, and -- the number until we hit zero. then on scene change, reset number
+if(active && length !=0)
+{
+	show_debug_message("Heres the freaking spawn timer");
+	show_debug_message(spawntimer);
+	if(spawntimer == 0)
+	{
+		spawntimer = spawncap;
+		show_debug_message(firstNodeX);
+		show_debug_message(firstNodeY);
+		instance_create_layer(firstNodeX, firstNodeY, "Instances", obj_sideSegment);
+		length--
+	}
+	else{spawntimer--}
+}
 
 //CONTINUE CHASE
 if(global.chase && !active)
