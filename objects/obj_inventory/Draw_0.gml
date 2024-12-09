@@ -1,5 +1,11 @@
 // Initialize spacing between inventory slots
 var spacing = 10; // Space between each slot
+inv_width = 250
+inv_height = 60
+ slot_width = inv_width / slots
+ slot_height = inv_height;
+ inv_x = (room_width - inv_width) / 2;
+    inv_y = room_height - inv_height - 20;
 
 // Adjust the total inventory width to accommodate spacing
 var total_width = (slot_width + spacing) * slots - spacing;

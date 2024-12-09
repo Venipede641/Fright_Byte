@@ -1,6 +1,5 @@
 /// Inventory slots
-    slots = 5;
-    
+
     // Inventory rectangle properties
     inv_width = 250;
     inv_height = 60;

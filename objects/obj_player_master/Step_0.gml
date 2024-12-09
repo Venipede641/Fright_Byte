@@ -161,7 +161,11 @@ else
 			in_air = false
 			y_velocity = 0
 		}*/
-		if(y_velocity > 0 && !platform_passthrough)
+		if(round(y+(sprite_height/2) > ycollison.y-39) || platform_passthrough)
+		{
+			y += y_velocity
+		}
+		else //else, pass through
 		{
 			y = ycollison.y -80
 			on_ground = true
@@ -170,10 +174,6 @@ else
 			jump_frames = 0
 			in_air = false
 			y_velocity = 0
-		}
-		else //else, pass through
-		{
-			y += y_velocity
 		}
 		break;
 		

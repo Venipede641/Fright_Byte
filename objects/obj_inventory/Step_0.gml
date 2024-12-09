@@ -1,4 +1,5 @@
 // Handle item selection (keys 1-5)
+slots = 5
 for (var i = 0; i < slots; i++) {
     if (keyboard_check_pressed(ord("1") + i) && !global.in_car) {
         // Deselect all slots

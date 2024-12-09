@@ -21,9 +21,9 @@ if(jump_frames <= 6)
 		jump_frames++
 		if(in_water)
 			{
-			if(jump_frames <= 4)
+			if(jump_frames <= 6)
 				{
-					y_velocity += jump_power/6
+					y_velocity = jump_power/1.5
 				}
 			in_water = false
 			can_be_wet = false
@@ -31,9 +31,9 @@ if(jump_frames <= 6)
 			}
 		else
 		{
-			if(jump_frames <= 4)
+			if(jump_frames <= 6)
 				{
-					y_velocity += jump_power/4
+					y_velocity = jump_power
 				}
 		}	
 		on_ground =false
