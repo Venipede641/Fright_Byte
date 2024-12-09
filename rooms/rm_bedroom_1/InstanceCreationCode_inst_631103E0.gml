@@ -1,3 +1,3 @@
-targetXPosition = 300
-targetYPosition = 500
+targetXPosition = 350
+targetYPosition = 450
 targetRoomId = rm_forest_start

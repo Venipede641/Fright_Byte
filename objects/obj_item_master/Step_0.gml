@@ -67,13 +67,33 @@ else
 		break;
 		
 		case 4: //move the player to another room
-		move_and_collide(0,y_velocity,obj_collidable_master)
+		move_and_collide(x_velocity,0,obj_collidable_master)
 		break;
+		
+		case 5:
+		x += x_velocity //ignore doors
+		break;
+		
+		case 7:
+		if(item_property == 3)
+		{
+			instance_create_layer(x,y,"instances",obj_floating_pet_food)
+			instance_destroy(self)
+		}
+		else
+		{
+			x+= x_velocity
+		}
+		break;
+		
+		case 8: // Basketball bounce logic
+                break;
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(x_velocity,0,obj_collidable_master)
 		is_falling = false
 		x_velocity = 0
+		break
 	}
 }
 	
@@ -141,11 +161,30 @@ else
 		y_velocity = 0
 		break;
 		
+		case 5:
+		y += y_velocity //ignore doors
+		break;
+		
+		case 7:
+		if(item_property == 3)
+		{
+			instance_create_layer(x,y+60,"Instances",obj_floating_pet_food)
+			instance_destroy(self)
+		}
+		else
+		{
+			y+= y_velocity
+		}
+		break
+		
+		case 8: // Basketball bounce logic
+	    break;
+		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)
 		is_falling = false
 		y_velocity = 0
-		
+		break
 	}
 	}
 }

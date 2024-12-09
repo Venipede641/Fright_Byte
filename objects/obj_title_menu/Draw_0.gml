@@ -1,17 +1,17 @@
 // Center the menu options
-var screen_width = display_get_width();
-var screen_height = display_get_height();
+var screen_width = room_width;
+var screen_height = room_height;
 
 var scale_factor = 0.5;
 
-var center_y = screen_height / 2 + 30; // Adjusted vertically lower
+var center_y = screen_height / 2 + 175; // Adjusted vertically lower
 var box_width = 160; // Rectangle width
 var box_height = 30; // Rectangle height
 var box_spacing = 180; // Spacing between options
 var total_width = array_length(options) * box_width + (array_length(options) - 1) * (box_spacing - box_width); // Total width of all boxes + spacing
-var start_x = (screen_width - total_width) / 2 - 150; // Adjusted starting position for left alignment
+var start_x = (screen_width - total_width) / 2 +50 ; // Adjusted starting position for left alignment
 
-var title_x = screen_width / 2 - 125; // Title x pos
+var title_x = screen_width / 2 +50; // Title x pos
 var title_y = 475; // Title y pos
 
 draw_sprite(spr_title, 0, title_x, title_y); // Draw the title
