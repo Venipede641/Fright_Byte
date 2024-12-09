@@ -6,6 +6,18 @@ if(global.player.y<y && !jumping && !receeding)
 	}
 }
 
+with(obj_item_master)
+{
+	if(y<other.y && !other.jumping && !other.receeding)
+{
+	if(x <= other.x+80 && x >= other.x)
+	{
+		other.jumping = true
+	}
+}
+
+	
+}
 if(jumpspeed>1 && sprite_index!=Plant_flying)
 {
 	sprite_index = Plant_flying	
