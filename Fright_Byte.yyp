@@ -190,6 +190,7 @@
     {"id":{"name":"spr_cat_jump_rising","path":"sprites/spr_cat_jump_rising/spr_cat_jump_rising.yy",},},
     {"id":{"name":"spr_cat_walk_itemhold","path":"sprites/spr_cat_walk_itemhold/spr_cat_walk_itemhold.yy",},},
     {"id":{"name":"spr_cat_walk","path":"sprites/spr_cat_walk/spr_cat_walk.yy",},},
+    {"id":{"name":"spr_cave_face_eat_npc","path":"sprites/spr_cave_face_eat_npc/spr_cave_face_eat_npc.yy",},},
     {"id":{"name":"spr_cave_face_npc","path":"sprites/spr_cave_face_npc/spr_cave_face_npc.yy",},},
     {"id":{"name":"spr_caveentrance","path":"sprites/spr_caveentrance/spr_caveentrance.yy",},},
     {"id":{"name":"spr_cavewall_1","path":"sprites/spr_cavewall_1/spr_cavewall_1.yy",},},
