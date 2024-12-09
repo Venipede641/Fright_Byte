@@ -1,3 +1,3 @@
 targetXPosition = 1520
-targetYPosition = 700
+targetYPosition = 660
 targetRoomId = rm_forest_01
