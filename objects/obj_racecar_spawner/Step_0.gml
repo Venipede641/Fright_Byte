@@ -24,3 +24,8 @@ if (spawn_timer <= 0 && !global.is_paused && !global.inDialogue) { // stop vehic
 	alarm[0] = 60; // 60 frames = 1 second
 	y_pos = spawn_y;
 }
+
+if (global.spawn_podium && room == rm_race_start){
+	instance_create_layer(800,600,"Instances", obj_podium);
+	
+}

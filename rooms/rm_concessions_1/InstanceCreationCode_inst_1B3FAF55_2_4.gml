@@ -1,3 +1,3 @@
-targetRoomId = rm_race_turn_3
-targetXPosition = 1100
-targetYPosition = 540
+targetRoomId = rm_sewer_exit
+targetXPosition = 800
+targetYPosition = 80

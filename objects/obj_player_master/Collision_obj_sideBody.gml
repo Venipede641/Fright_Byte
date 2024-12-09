@@ -5,5 +5,7 @@ y = -130;
 audio_stop_all()
 audio_play_sound(mus_ambienthorror,10,true)
 global.chase =false
-global.break_game=true
+if (!global.player_died) {
+    global.player_died = true; // Mark that the player has died
+}
 global.spawn_rifts=true

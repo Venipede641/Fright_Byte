@@ -3,4 +3,5 @@ if(keyboard_check_pressed(vk_enter)){
 	x= 800
 	y= 10
 	obj_player_master.player_health = 3
+	audio_stop_sound(mus_ambienthorror);
 }

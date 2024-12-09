@@ -1,9 +1,9 @@
 function add_to_inventory(item_object, item_sprite) {
-	if(item_object == obj_racecar){//ensure racecar always goes in last slot... This may get deleted as its not super necessary
+	/*if(item_object == obj_racecar){//ensure racecar always goes in last slot... This may get deleted as its not super necessary
 		global.inventory_slots[4].item = item_object; // Store object ID
         global.inventory_slots[4].sprite = item_sprite; // Assign sprite
 		return;
-	}
+	}*/
 	
     // If no duplicate, add item to first empty slot
     for (var i = 0; i < array_length(global.inventory_slots); i++) {
