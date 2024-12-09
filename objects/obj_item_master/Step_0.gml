@@ -168,7 +168,7 @@ else
 		case 7:
 		if(item_property == 3)
 		{
-			instance_create_layer(x,y+40,"Instances",obj_floating_pet_food)
+			instance_create_layer(x,y+60,"Instances",obj_floating_pet_food)
 			instance_destroy(self)
 		}
 		else

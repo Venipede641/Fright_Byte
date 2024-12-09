@@ -8,8 +8,8 @@
   "name":"obj_pet_food_dispencer",
   "overriddenProperties":[],
   "parent":{
-    "name":"collidables",
-    "path":"folders/Objects/level_geometry/collidables.yy",
+    "name":"item givers",
+    "path":"folders/Objects/level_geometry/collidables/item givers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

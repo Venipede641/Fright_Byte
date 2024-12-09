@@ -9,7 +9,10 @@ if(global.inDialogue)
 	x_velocity = 0
 }
 
-
+if(!keyboard_check(vk_space))
+{
+	is_jumping = false	
+}
 
 if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x+10 to ensure inventroy interaction occurs before pickup
     with (obj_lantern) {
@@ -68,6 +71,7 @@ else
 		
 		case 2: //one way platforms, player can rise through them but land on top and can move through them horizontaly
 		x += x_velocity
+		is_jumping = false
 		break;
 		
 		case 3: //same as case 1, but different for key
@@ -124,40 +128,54 @@ else
 	{
 		case 1: //solid ground from all directions
 		move_and_collide(0,y_velocity,obj_collidable_master)
-		on_ground = true
-		is_falling = false
+		if(y_velocity > 0)
+		{
 		is_jumping = false
 		in_air = false
+		is_falling = false
+		on_ground = true
+		jump_frames = 0
+		}
 		y_velocity = 0
 		break;
 		
 		case 2: //one way platforms, player can rise through them but land on top
-		if(bbox_bottom -1 <= ycollison.bbox_top && !platform_passthrough) //if we are above the platform, set our y to the platform y
+		/*if(bbox_bottom -1 <= ycollison.bbox_top && !platform_passthrough) //if we are above the platform, set our y to the platform y
+		{
+			y = ycollison.y -80
+			on_ground = true
+			is_falling = false
+			jump_frames = 0
+			in_air = false
+			y_velocity = 0
+		}*/
+		if(y_velocity > 0 && !platform_passthrough)
 		{
 			y = ycollison.y -80
 			on_ground = true
 			is_falling = false
 			is_jumping = false
+			jump_frames = 0
 			in_air = false
 			y_velocity = 0
 		}
 		else //else, pass through
 		{
 			y += y_velocity
-			on_ground = false
-			is_falling = true
-			is_jumping = true
-			in_air = true
 		}
 		break;
 		
 		case 3: //same as case 1, but different for key
 		move_and_collide(0,y_velocity,obj_collidable_master)
-			on_ground = true
-			is_falling = false
-			is_jumping = false
-			in_air = false
-			y_velocity = 0
+		if(y_velocity > 0)
+		{
+		is_jumping = false
+		in_air = false
+		is_falling = false
+		on_ground = true
+		jump_frames = 0
+		}
+		y_velocity = 0
 		break;
 		
 		case 4: //move the player to another room
@@ -197,6 +215,7 @@ else
 		 on_ground = true
 		is_falling = false
 		is_jumping = false
+		jump_frames = 0
 		in_air = false
 		y_velocity = 0
 		in_water = true
@@ -232,10 +251,14 @@ else
 		
 		default: //incase, treat it like regular ground
 		move_and_collide(0,y_velocity,obj_collidable_master)
-		on_ground = true
-		is_falling = false
+		if(y_velocity > 0)
+		{
 		is_jumping = false
 		in_air = false
+		is_falling = false
+		on_ground = true
+		jump_frames = 0
+		}
 		y_velocity = 0
 		break;
 	}
