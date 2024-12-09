@@ -8,7 +8,7 @@ if(is_holding_item == true)
 	var item = instance_nearest(x,y,obj_item_master) //gets the item the player is holding for flag updating
 	item.being_thrown = true
 	alarm[0] = game_get_speed(gamespeed_fps) * .5 //after the alarm expires, the player can pick up items again, prevents weird edge cases
-	item.x_velocity = (image_xscale) * 15 //l-l-l-launching!
-	item.y_velocity = -27.5
+	item.x_velocity = (image_xscale) *(15 +abs(x_velocity/2)) //l-l-l-launching!
+	item.y_velocity = -25 + (y_velocity/2)
 	item.being_held = false
 }
