@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_health_pickup",
-    "path":"sprites/spr_health_pickup/spr_health_pickup.yy",
+    "name":"castleBricks",
+    "path":"sprites/castleBricks/castleBricks.yy",
   },
   "spriteMaskId":null,
   "visible":true,

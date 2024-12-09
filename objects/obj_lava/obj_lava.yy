@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_water",
-    "path":"sprites/spr_water/spr_water.yy",
+    "name":"Deathfog",
+    "path":"sprites/Deathfog/Deathfog.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spikeblocktemp",
-    "path":"sprites/spr_spikeblocktemp/spr_spikeblocktemp.yy",
+    "name":"Spikeball",
+    "path":"sprites/Spikeball/Spikeball.yy",
   },
   "spriteMaskId":null,
   "visible":true,

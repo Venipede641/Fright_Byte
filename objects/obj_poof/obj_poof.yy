@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"death_poof",
-    "path":"sprites/death_poof/death_poof.yy",
+    "name":"spr_enemy_destroyed",
+    "path":"sprites/spr_enemy_destroyed/spr_enemy_destroyed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

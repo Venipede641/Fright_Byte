@@ -18,3 +18,16 @@ function add_to_inventory(item_object, item_sprite) {
     // Optional: Handle case where inventory is full
     show_debug_message("Inventory is full!");
 }
+
+function remove_from_inventory(item_object)
+{
+	for(var i =0; i<array_length(global.inventory_slots);i++)
+	{
+		if(global.inventory_slots[i].item == item_object)
+		{
+			global.inventory_slots[i].item = noone
+			global.inventory_slots[i].sprite = noone
+		}
+	}
+	
+}

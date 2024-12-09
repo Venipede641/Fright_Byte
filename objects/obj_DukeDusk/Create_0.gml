@@ -1,0 +1,1 @@
+global.ruby_pass = false;
