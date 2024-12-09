@@ -1,3 +1,4 @@
-targetRoomId = rm_concessions_1
-targetXPosition = 800
-targetYPosition = 680
+sprite_index = spr_sewer_grate
+targetRoomId = rm_sewer_exit
+targetXPosition = 225
+targetYPosition = 500

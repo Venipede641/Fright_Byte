@@ -1,5 +1,5 @@
 depth = 10; // ensures the door goes behind the player
-is_locked = false;
+
 //specific create instances in rooms overide these values
 targetRoomId = -1;
 targetXPosition = -1;

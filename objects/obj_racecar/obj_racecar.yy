@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_racecar",
-    "path":"sprites/spr_racecar/spr_racecar.yy",
+    "name":"spr_racecar_idle",
+    "path":"sprites/spr_racecar_idle/spr_racecar_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

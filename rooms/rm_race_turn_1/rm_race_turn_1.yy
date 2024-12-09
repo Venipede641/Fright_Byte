@@ -79,6 +79,8 @@
     {"name":"inst_5166B1BA","path":"rooms/rm_race_turn_1/rm_race_turn_1.yy",},
     {"name":"inst_619FC82A","path":"rooms/rm_race_turn_1/rm_race_turn_1.yy",},
     {"name":"inst_19FD1441","path":"rooms/rm_race_turn_1/rm_race_turn_1.yy",},
+    {"name":"inst_28EA6786","path":"rooms/rm_race_turn_1/rm_race_turn_1.yy",},
+    {"name":"inst_6F365F9B","path":"rooms/rm_race_turn_1/rm_race_turn_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -161,6 +163,8 @@
         {"$GMRInstance":"v1","%Name":"inst_5166B1BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5166B1BA","objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":720.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_619FC82A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_619FC82A","objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_19FD1441","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19FD1441","objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":880.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_28EA6786","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28EA6786","objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":130.0,"y":600.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6F365F9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F365F9B","objectId":{"name":"obj_tire","path":"objects/obj_tire/obj_tire.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":530.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_4D7139F9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4D7139F9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"spriteId":{"name":"spr_turn_1","path":"sprites/spr_turn_1/spr_turn_1.yy",},"x":40.0,"y":440.0,},
