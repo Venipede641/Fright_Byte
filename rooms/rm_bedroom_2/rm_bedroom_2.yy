@@ -71,7 +71,6 @@
     {"name":"inst_5ED74617_1","path":"rooms/rm_bedroom_2/rm_bedroom_2.yy",},
     {"name":"inst_8908237_1","path":"rooms/rm_bedroom_2/rm_bedroom_2.yy",},
     {"name":"inst_300FEACE_1","path":"rooms/rm_bedroom_2/rm_bedroom_2.yy",},
-    {"name":"inst_2E2908_1","path":"rooms/rm_bedroom_2/rm_bedroom_2.yy",},
     {"name":"inst_FEF843A_1","path":"rooms/rm_bedroom_2/rm_bedroom_2.yy",},
   ],
   "isDnd":false,

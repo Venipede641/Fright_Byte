@@ -71,7 +71,6 @@
     {"name":"inst_5ED74617_1_1","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
     {"name":"inst_8908237_1_1","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
     {"name":"inst_300FEACE_1_1","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
-    {"name":"inst_2E2908_1_1","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
     {"name":"inst_FEF843A_1_1","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
     {"name":"inst_E6B352E","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
     {"name":"inst_E6A43FC","path":"rooms/rm_bedroom_3/rm_bedroom_3.yy",},
