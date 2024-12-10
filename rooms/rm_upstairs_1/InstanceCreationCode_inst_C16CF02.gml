@@ -1,3 +1,3 @@
 targetXPosition = 240;
-targetYPosition = 670;
+targetYPosition = 680;
 targetRoomId = rm_bedroom_1;

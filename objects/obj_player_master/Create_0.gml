@@ -11,3 +11,7 @@ global.fisherDialogue = 1
 global.woodsmanDialogue = 1 
 global.rickyDialogue = 1
 global.wifipass = false
+
+invulnframescap=30
+invulnframes =invulnframescap
+prevhealth = player_health

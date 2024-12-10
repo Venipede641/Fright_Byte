@@ -68,6 +68,8 @@
     {"name":"inst_753F69F1","path":"rooms/rm_tree_house/rm_tree_house.yy",},
     {"name":"inst_1517A875","path":"rooms/rm_tree_house/rm_tree_house.yy",},
     {"name":"inst_3ADC1FC","path":"rooms/rm_tree_house/rm_tree_house.yy",},
+    {"name":"inst_269FA184","path":"rooms/rm_tree_house/rm_tree_house.yy",},
+    {"name":"inst_E3DE607","path":"rooms/rm_tree_house/rm_tree_house.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -134,6 +136,8 @@
         {"$GMRInstance":"v1","%Name":"inst_753F69F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_753F69F1","objectId":{"name":"obj_key","path":"objects/obj_key/obj_key.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":680.0,},
         {"$GMRInstance":"v1","%Name":"inst_1517A875","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1517A875","objectId":{"name":"obj_basketball","path":"objects/obj_basketball/obj_basketball.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1200.0,"y":680.0,},
         {"$GMRInstance":"v1","%Name":"inst_3ADC1FC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3ADC1FC","objectId":{"name":"tutorial_dialogue_pt5","path":"objects/tutorial_dialogue_pt5/tutorial_dialogue_pt5.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":760.0,"y":240.0,},
+        {"$GMRInstance":"v1","%Name":"inst_269FA184","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_269FA184","objectId":{"name":"obj_spooder","path":"objects/obj_spooder/obj_spooder.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":360.0,"y":640.0,},
+        {"$GMRInstance":"v1","%Name":"inst_E3DE607","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E3DE607","objectId":{"name":"obj_bouncer","path":"objects/obj_bouncer/obj_bouncer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":680.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_745E60C1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_745E60C1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":5.6923075,"scaleY":5.3333335,"spriteId":{"name":"spr_treehouse_window","path":"sprites/spr_treehouse_window/spr_treehouse_window.yy",},"x":448.0,"y":416.0,},

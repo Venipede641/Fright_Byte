@@ -11,7 +11,10 @@
     "name":"type1: solids",
     "path":"folders/Objects/level_geometry/collidables/type1: solids.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_collison_box",
+    "path":"objects/obj_collison_box/obj_collison_box.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

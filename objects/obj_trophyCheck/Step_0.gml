@@ -30,7 +30,10 @@ if(global.holdingTrophy)
 		{
 			if(global.player.x > x-40 && global.player.y < x+40)
 			{
+				instance_create_layer(0,0,"Instances",obj_fadeout);
 				room_goto(abyss_1)
+				global.player.x = 240
+				global.player.y = 90
 			}
 			else{show_debug_message("wrong x position")}
 		}

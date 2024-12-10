@@ -7,3 +7,4 @@ event_inherited();
 
 
 dialogue.add(spr_MousePort,"Stick to the plan, baby.")
+dialogue.add(spr_MousePort,"FIX MY CAR! TWO TIRES!")

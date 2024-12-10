@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Gem_Resting",
-    "path":"sprites/Gem_Resting/Gem_Resting.yy",
+    "name":"trophy",
+    "path":"sprites/trophy/trophy.yy",
   },
   "spriteMaskId":{
     "name":"Axe_Idle",

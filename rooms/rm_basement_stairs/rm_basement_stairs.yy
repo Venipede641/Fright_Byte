@@ -103,6 +103,7 @@
     {"name":"inst_46B43035","path":"rooms/rm_basement_stairs/rm_basement_stairs.yy",},
     {"name":"inst_75B4A20A","path":"rooms/rm_basement_stairs/rm_basement_stairs.yy",},
     {"name":"inst_30686F12","path":"rooms/rm_basement_stairs/rm_basement_stairs.yy",},
+    {"name":"inst_3D284DD","path":"rooms/rm_basement_stairs/rm_basement_stairs.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -204,6 +205,7 @@
         {"$GMRInstance":"v1","%Name":"inst_46B43035","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46B43035","objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":200.0,"y":520.0,},
         {"$GMRInstance":"v1","%Name":"inst_75B4A20A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75B4A20A","objectId":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":-80.0,"y":320.0,},
         {"$GMRInstance":"v1","%Name":"inst_30686F12","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30686F12","objectId":{"name":"tutorial_dialogue_pt6","path":"objects/tutorial_dialogue_pt6/tutorial_dialogue_pt6.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":720.0,"y":280.0,},
+        {"$GMRInstance":"v1","%Name":"inst_3D284DD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D284DD","objectId":{"name":"Object87","path":"objects/Object87/Object87.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":400.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"decor","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_13DDD655","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_13DDD655","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},"x":720.0,"y":160.0,},

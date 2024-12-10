@@ -9,8 +9,8 @@
   "name":"Object87",
   "overriddenProperties":[],
   "parent":{
-    "name":"Darkness",
-    "path":"folders/Rooms/Darkness.yy",
+    "name":"Fright_Byte",
+    "path":"Fright_Byte.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

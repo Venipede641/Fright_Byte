@@ -2,7 +2,33 @@ if (global.is_paused) {
 	//do nothing while the game is paused
 	exit;	
 }
+if(player_health==0 && room != rm_game_over)
+{
+	GameOver()
+	exit;
+}
+if(prevhealth!=player_health && !global.isinvulnerable)
+{
+	global.isinvulnerable = true
+}
 
+if(global.isinvulnerable)
+{
+	image_blend = c_grey;
+	//tint player
+	if(invulnframes==0)
+	
+	{
+		global.isinvulnerable = false
+		invulnframes = invulnframescap
+	}
+	else{invulnframes--}
+}
+else
+{
+	image_blend = c_white;
+}
+prevhealth = player_health
 //Stop our movement if we are in dialogue
 if(global.inDialogue)
 {

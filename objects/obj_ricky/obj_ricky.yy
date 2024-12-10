@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Fisherman",
-    "path":"sprites/Fisherman/Fisherman.yy",
+    "name":"Temp_Ricky",
+    "path":"sprites/Temp_Ricky/Temp_Ricky.yy",
   },
   "spriteMaskId":null,
   "visible":true,

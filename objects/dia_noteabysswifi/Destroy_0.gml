@@ -6,3 +6,5 @@ with(obj_note_abyss)
 	instance_destroy()
 }
 global.wifipass = true
+audio_stop_all()
+audio_play_sound(mus_chase,1,true)

@@ -14,6 +14,10 @@ if(distance_to_object(global.player) < 20)
 	{
 	instance_create_layer(0,0,"Instances",dia_ricky3)
 	}
+	if(global.rickyDialogue ==4)
+	{
+	instance_create_layer(0,0,"Instances",dia_ricky4)
+	}
 }
 
 }

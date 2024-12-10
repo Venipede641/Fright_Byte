@@ -4,6 +4,7 @@ function GameOver(){
 	
 room_goto(rm_game_over);
 global.chase = false;
+//global.is_locked = false
 x = 650;
 y = -130;
 audio_stop_all()

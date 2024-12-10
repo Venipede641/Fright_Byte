@@ -4,5 +4,5 @@
 //}
 //else
 //{
-	other.player_health--
+	if(!global.isinvulnerable){other.player_health--}
 //}
