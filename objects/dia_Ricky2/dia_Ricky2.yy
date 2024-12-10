@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"dia_Ricky2",
+  "%Name":"dia_ricky2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":58,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"dia_Ricky2",
+  "name":"dia_ricky2",
   "overriddenProperties":[],
   "parent":{
-    "name":"race_level_specific",
-    "path":"folders/Objects/race_level_specific.yy",
+    "name":"tutorial dialogue",
+    "path":"folders/Objects/tutorial dialogue.yy",
   },
   "parentObjectId":{
     "name":"DialogueParent",
