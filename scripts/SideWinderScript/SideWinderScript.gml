@@ -57,6 +57,7 @@ function UpdateColPath()
 }
 function SideWinderUpdate(bodyPart)
 {
+if(!global.killSidewinder){
 		global.pathPlayer = path_add();
 		path_set_kind(global.pathPlayer, 0);
 		
@@ -127,7 +128,7 @@ for(i = 0; i<num; i++)
 				}
 			}
 	}
-		
+}
 }
 		
 

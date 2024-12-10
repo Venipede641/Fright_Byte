@@ -3,7 +3,8 @@
 //show_debug_message(global.chase)
 if(active)
 {
-SideWinderUpdate(bodyPart);
+	if(!global.killSidewinder)
+{SideWinderUpdate(bodyPart);}
 }
 //show_debug_message(string(global.player.x) + "," + string(global.player.y));
 
