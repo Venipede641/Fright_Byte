@@ -513,6 +513,7 @@
     {"id":{"name":"spr_tree_interior02","path":"sprites/spr_tree_interior02/spr_tree_interior02.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
     {"id":{"name":"spr_treehouse_window","path":"sprites/spr_treehouse_window/spr_treehouse_window.yy",},},
+    {"id":{"name":"spr_trophy","path":"sprites/spr_trophy/spr_trophy.yy",},},
     {"id":{"name":"spr_turn_1","path":"sprites/spr_turn_1/spr_turn_1.yy",},},
     {"id":{"name":"spr_turn_2","path":"sprites/spr_turn_2/spr_turn_2.yy",},},
     {"id":{"name":"spr_turn_3","path":"sprites/spr_turn_3/spr_turn_3.yy",},},
