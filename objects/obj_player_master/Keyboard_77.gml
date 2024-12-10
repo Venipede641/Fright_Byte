@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-room_goto(rm_fish_start)
+room_goto(abyss_5)
 with(obj_anchor)
 {
 	global.player.x = x

@@ -14,6 +14,8 @@ draw_set_color(c_black)
 //draw_circle(global.player.x,global.player.y, 90, false)
 with(obj_lantern)
 {draw_circle(x,y, 400, false)}
+with(obj_DukeDusk)
+{draw_circle(x,y, 400, false)}
 gpu_set_blendmode(bm_normal)
 surface_reset_target()
 draw_surface(maskSurface,0,0)

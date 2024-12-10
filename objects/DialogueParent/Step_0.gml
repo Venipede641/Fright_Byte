@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var india = false
 if(showing_dialogue == false)
 {
 	if(dialogue.count() <= 0)
@@ -9,8 +10,13 @@ if(showing_dialogue == false)
 		global.inDialogue = false;
 		return;
 	}
+	else{india = true;}
 
 	current_dialogue = dialogue.pop();
+	if(india)
+	{
+		global.inDialogue = true
+	}
 	// show_debug_message("Added to current dialogue!")
 	showing_dialogue = true;
 }

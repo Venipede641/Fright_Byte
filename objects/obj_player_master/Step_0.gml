@@ -19,6 +19,7 @@ if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x
         instance_destroy(); // Remove lantern from the game world
     }
 	global.lantern_grabbed = true;
+	global.fisherDialogue=3;
     add_to_inventory(obj_lantern, spr_lantern); // Call inventory function
 }
 
