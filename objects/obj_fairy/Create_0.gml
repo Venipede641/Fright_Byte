@@ -1,0 +1,11 @@
+xvalue = 1
+speedValue = 8
+stunned = false
+stuncap = 90
+stuntimer = stuncap
+anchor1 = [x,y]
+anchor2 = [0,0]
+towards = anchor2
+away = anchor1
+previousxsign = 0
+previousysign = 0

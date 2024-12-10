@@ -1,3 +1,3 @@
-targetXPosition = 800
-targetYPosition = 660
+targetXPosition = 350
+targetYPosition = 450
 targetRoomId = rm_race_start

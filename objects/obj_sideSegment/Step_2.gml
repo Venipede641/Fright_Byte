@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in self editor
+if(global.killSidewinder)
+{
+	instance_destroy()
+
+instance_create_layer(x,y,"Instances",obj_poof) ;return
+}
 if(self.x != self.xprevious || self.y != self.yprevious)
 {
 var temp = [x,y]

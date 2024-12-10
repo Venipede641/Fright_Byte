@@ -37,5 +37,5 @@
     "path":"sprites/spr_collision_box/spr_collision_box.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

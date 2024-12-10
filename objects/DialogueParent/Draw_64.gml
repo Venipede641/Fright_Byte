@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 if(showing_dialogue)
 {
 	//show_debug_message("Starting GUI!")
@@ -35,9 +37,11 @@ if(showing_dialogue)
 	
 	draw_set_color(c_white);
 	draw_text_ext(text_x,text_y,current_dialogue.message,16,display_get_gui_width() - 192)
+
 }
-else
+else if (global.inDialogue)
 {
+	
 	var text_x = 30;
 	var text_y = 18;
 	var height = 32;
@@ -68,4 +72,5 @@ else
 		draw_sprite(current_dialogue.sprite,0,border*3,border*3);
 	}
 	draw_set_color(c_white);
+	
 }

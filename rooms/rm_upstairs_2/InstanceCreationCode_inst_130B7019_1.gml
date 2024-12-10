@@ -1,3 +1,3 @@
-targetXPosition = 800;
-targetYPosition = 40;
-targetRoomId = rm_living_room;
+targetXPosition = 200;
+targetYPosition = 640;
+targetRoomId = rm_bedroom_3;

@@ -41,5 +41,5 @@
     "path":"sprites/spr_exit_test/spr_exit_test.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,0 +1,1 @@
+if(!animated){animating = true}

@@ -19,6 +19,7 @@ if (!global.lantern_grabbed && place_meeting(x + 10, y + 5, obj_lantern)) { // x
         instance_destroy(); // Remove lantern from the game world
     }
 	global.lantern_grabbed = true;
+	global.fisherDialogue=3;
     add_to_inventory(obj_lantern, spr_lantern); // Call inventory function
 }
 
@@ -28,6 +29,31 @@ if (!global.car_grabbed && place_meeting(x + 10, y + 5, obj_racecar)) { // x+10 
     }
 	global.car_grabbed = true;
     add_to_inventory(obj_racecar, spr_racecar_moving); // Call inventory function
+}
+
+if (!global.axe_grabbed && place_meeting(x + 10, y + 5, obj_axeItem)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_axeItem) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.axe_grabbed = true;
+    add_to_inventory(obj_axeItem,axe_inv); // Call inventory function
+}
+
+if (!global.ruby_grabbed && place_meeting(x + 10, y + 5, obj_ruby)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_ruby) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.ruby_grabbed = true;
+    add_to_inventory(obj_ruby,rubyInv); // Call inventory function
+}
+
+
+if (!global.trophy_grabbed && place_meeting(x + 10, y + 5, obj_trophy)) { // x+10 to ensure inventroy interaction occurs before pickup
+    with (obj_trophy) {
+        instance_destroy(); // Remove lantern from the game world
+    }
+	global.trophy_grabbed = true;
+    add_to_inventory(obj_trophy,trophyInv); // Call inventory function
 }
 
 if(global.in_car){ // speed doubles while in racecar

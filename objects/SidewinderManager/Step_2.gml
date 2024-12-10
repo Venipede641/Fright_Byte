@@ -3,7 +3,8 @@
 //show_debug_message(global.chase)
 if(active)
 {
-SideWinderUpdate(bodyPart);
+	if(!global.killSidewinder)
+{SideWinderUpdate(bodyPart);}
 }
 //show_debug_message(string(global.player.x) + "," + string(global.player.y));
 
@@ -46,8 +47,7 @@ if(global.cutChasex != 0 || global.cutChasey != 0)
 	bodyPart = instance_create_layer(global.cutChasex, global.cutChasey, "Instances", obj_sideBody);
 	firstNodeX = global.cutChasex
 	firstNodeY = global.cutChasey
-	global.cutChasex = 0
-	global.cutChasey = 0
+	
 	
 }
 else{bodyPart = instance_create_layer(currentNode.x, currentNode.y, "Instances", obj_sideBody);}
@@ -71,6 +71,7 @@ if(active && length !=0)
 		spawntimer = spawncap;
 		show_debug_message(firstNodeX);
 		show_debug_message(firstNodeY);
+		if(global.cutChasex != 0 || global.cutChasey !=0){firstNodex = global.cutChasex;firstNodey = global.cutChasey;}
 		instance_create_layer(firstNodeX, firstNodeY, "Instances", obj_sideSegment);
 		length--
 	}

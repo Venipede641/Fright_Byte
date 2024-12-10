@@ -1,10 +1,10 @@
 event_inherited();
 
-dialogue.add(spr_MousePort,"You actually made it! thats good that means there is still time...")
-dialogue.add(spr_MousePort,"You see you were never supposed to wake up at all. This world has long since been discarded.")
-dialogue.add(spr_MousePort,"Discarded? That means our time has run out! We aren't even supposed to exist!")
-dialogue.add(spr_MousePort,"But for some reason the game lives on. We just refuse to let go.")
-dialogue.add(spr_MousePort,"And now there is only one reason why you would have woken up.")
-dialogue.add(spr_MousePort,"Something has booted our world back online!")
-dialogue.add(spr_MousePort,"For a long, long time I thought I was trapped here. But now that you're awake maybe we can find a way out of this dump... together!")
-dialogue.add(spr_MousePort,"Wait what's that something is coming-")
+dialogue.add(spr_MousePort,"You actually made it! Okay, man where do I even start.")
+dialogue.add(spr_MousePort,"I'm not used to this, usually the new pets are mince meat by now.")
+dialogue.add(spr_MousePort,"So...ahem...a long long time ago there was this group of software developers")
+dialogue.add(spr_MousePort,"The *worst*, I know.")
+dialogue.add(spr_MousePort,"They made this...thing...that we're in. Some kind of maleable program.")
+dialogue.add(spr_MousePort,"Well, we've been abandoned for a long. LONG. time, and the degredation of our hardware has taken it's toll.")
+dialogue.add(spr_MousePort,"I think...maybe we can escape him. Maybe we can do this, together!")
+dialogue.add(spr_MousePort,"Wait...what's that!? No please tell me its not-")

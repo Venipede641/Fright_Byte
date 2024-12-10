@@ -1,0 +1,1 @@
+targetRoomId=castle_3
