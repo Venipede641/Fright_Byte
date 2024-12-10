@@ -29,6 +29,13 @@ if(jump_frames <= 6)
 			can_be_wet = false
 			alarm[3] = .25 * game_get_speed(gamespeed_fps)
 			}
+		else if(!can_be_wet)
+		{
+			if(jump_frames <= 6)
+				{
+					y_velocity = jump_power/1.5
+				}
+		}
 		else
 		{
 			if(jump_frames <= 6)

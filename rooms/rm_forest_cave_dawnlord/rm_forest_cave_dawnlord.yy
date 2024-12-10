@@ -171,6 +171,7 @@
     {"name":"inst_76C8B1F8","path":"rooms/rm_forest_cave_dawnlord/rm_forest_cave_dawnlord.yy",},
     {"name":"inst_389BBA0B","path":"rooms/rm_forest_cave_dawnlord/rm_forest_cave_dawnlord.yy",},
     {"name":"inst_5FE20363","path":"rooms/rm_forest_cave_dawnlord/rm_forest_cave_dawnlord.yy",},
+    {"name":"inst_229020C6","path":"rooms/rm_forest_cave_dawnlord/rm_forest_cave_dawnlord.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -340,6 +341,7 @@
         {"$GMRInstance":"v1","%Name":"inst_A862F01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A862F01","objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1200.0,"y":240.0,},
         {"$GMRInstance":"v1","%Name":"inst_76C8B1F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76C8B1F8","objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":160.0,},
         {"$GMRInstance":"v1","%Name":"inst_389BBA0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_389BBA0B","objectId":{"name":"Object87","path":"objects/Object87/Object87.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":840.0,"y":320.0,},
+        {"$GMRInstance":"v1","%Name":"inst_229020C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_229020C6","objectId":{"name":"obj_healthbar","path":"objects/obj_healthbar/obj_healthbar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":760.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_47924E1F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_47924E1F","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"spriteId":{"name":"spr_cavewall_1","path":"sprites/spr_cavewall_1/spr_cavewall_1.yy",},"x":720.0,"y":480.0,},

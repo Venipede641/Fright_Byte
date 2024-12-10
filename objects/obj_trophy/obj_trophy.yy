@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"trophy",
-    "path":"sprites/trophy/trophy.yy",
+    "name":"spr_trophy",
+    "path":"sprites/spr_trophy/spr_trophy.yy",
   },
   "spriteMaskId":{
     "name":"Axe_Idle",

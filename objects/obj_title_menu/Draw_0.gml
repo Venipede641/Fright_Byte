@@ -9,9 +9,9 @@ var box_width = 160; // Rectangle width
 var box_height = 30; // Rectangle height
 var box_spacing = 180; // Spacing between options
 var total_width = array_length(options) * box_width + (array_length(options) - 1) * (box_spacing - box_width); // Total width of all boxes + spacing
-var start_x = (screen_width - total_width) / 2 +50 ; // Adjusted starting position for left alignment
+var start_x = (screen_width - total_width) / 2  ; // Adjusted starting position for left alignment
 
-var title_x = screen_width / 2 +50; // Title x pos
+var title_x = screen_width / 2 + 50 ; // Title x pos
 var title_y = 475; // Title y pos
 
 draw_sprite(spr_title, 0, title_x, title_y); // Draw the title

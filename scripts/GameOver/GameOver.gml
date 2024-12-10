@@ -12,5 +12,5 @@ audio_play_sound(mus_ambienthorror,10,true)
 global.chase =false
 global.break_game=true
 global.spawn_rifts=true
-
+global.player_died = true
 }
