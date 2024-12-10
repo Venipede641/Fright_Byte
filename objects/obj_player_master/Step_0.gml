@@ -189,7 +189,7 @@ else
 		}*/
 		if(round(y+(sprite_height/2) > ycollison.y-39) || platform_passthrough)
 		{
-			y += y_velocity
+			move_and_collide(0,y_velocity,obj_collison_box)
 		}
 		else //else, pass through
 		{

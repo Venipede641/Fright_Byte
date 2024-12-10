@@ -108,6 +108,7 @@
     {"name":"inst_37327E24","path":"rooms/rm_forest_cabin/rm_forest_cabin.yy",},
     {"name":"inst_2AE9504B","path":"rooms/rm_forest_cabin/rm_forest_cabin.yy",},
     {"name":"inst_73B5ED2C","path":"rooms/rm_forest_cabin/rm_forest_cabin.yy",},
+    {"name":"inst_785BD690","path":"rooms/rm_forest_cabin/rm_forest_cabin.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -215,6 +216,7 @@
         {"$GMRInstance":"v1","%Name":"inst_37327E24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37327E24","objectId":{"name":"obj_bouncer","path":"objects/obj_bouncer/obj_bouncer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":-40.0,},
         {"$GMRInstance":"v1","%Name":"inst_2AE9504B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2AE9504B","objectId":{"name":"Object87","path":"objects/Object87/Object87.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1080.0,"y":240.0,},
         {"$GMRInstance":"v1","%Name":"inst_73B5ED2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_73B5ED2C","objectId":{"name":"obj_woodsman","path":"objects/obj_woodsman/obj_woodsman.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1360.0,"y":760.0,},
+        {"$GMRInstance":"v1","%Name":"inst_785BD690","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_785BD690","objectId":{"name":"obj_healthbar","path":"objects/obj_healthbar/obj_healthbar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":120.0,"y":760.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_2","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_10F8F4C7","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_10F8F4C7","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cabin_refrigerator","path":"sprites/spr_cabin_refrigerator/spr_cabin_refrigerator.yy",},"x":1080.0,"y":640.0,},
